@@ -78,6 +78,8 @@
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
     
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -201,10 +203,8 @@
 </head>
 
     
-        <body class="home-body">
     
-    
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -220,34 +220,21 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/space2-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            changliang.io
-            <!-- 文章页  -->
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
-            
-            
-                Another blog by Azure
-            
-            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -385,161 +372,10 @@ height:50vh;
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/25/一个漫长的标/" >
-            
-                <span>一个漫长的标</span>
-        </a>
-        <div class="abstract-content">
-            从2017年底接触投标工作以来，这次的标是我经手的金额最大、规模最大也是耗费时间最长的标了，所以有必要在这里记录一下。
-这个项目招标金额虽然不如上次的另一个项目份额大，但却是在5G时代到来之际非常重要的一个标。从8月底招标方发布招标公告，开始编写投标方案，到后期全省17地市的兄弟都汇集到省公司，一屋子人每天忙忙碌碌到后半夜，编写各地市定制化的资源、方案，真的很让人触动。其实这对于经常接触投标工作的人也许是很平常的事，但是这次大家齐心协力，一起经历了20多天的奋斗，真的很不容易，直到最后顺利完成了所有七个投标标书的生成盖章和上传，大家还在紧张的核对招投标文件是否有遗漏。
-开标时间是第二天的...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/25</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "投标">投标</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/08/新的开始/" >
-            
-                <span>新的开始</span>
-        </a>
-        <div class="abstract-content">
-            写在前面的话之前从高中就喜欢鼓捣网站，后来接触多了编程语言，开始鼓捣博客，PHP折腾的比较多，主要是用Wordpress，改主题，改插件，等等……但是技术一直没什么长进，另外，主要是经常“喜新厌旧”的，就拿“新的开始”、“Hello World”这两个主题起过头的博客都不知道多少个了，总是无法坚持写，最多的一个博客可能写过3、4年吧，最后也存了个档就删除了。
-关于域名说说这个域名：changliang.io，也是我的名字域名，因此对我来说意义非凡，但真正让我有注册这个域名的灵感还是在学习Python时，老师讲到的“常量”，（当然，我初中就知道常量的意思，我也曾近因为这个在计算机课上很尴尬...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "域名">域名</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "服务器">服务器</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "博客">博客</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
 </main>
             <!-- profile -->
-            
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/Azure.jpg >
-    <div class="profile-name">Azure</div>
-    
-    <div class="profile-signature">
-        Real me
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
-            
-                <a href="mailto:c#ichl.info" class="iconfont-archer email" title=email ></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/ichl" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            
-                <a href="//weibo.com/azure" class="iconfont-archer weibo" target="_blank" title=weibo></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-            
-                
-            
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
             
         </div>
         <footer class="footer footer-unloaded">

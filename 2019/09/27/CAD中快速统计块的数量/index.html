@@ -22,7 +22,7 @@
     <meta name="description" content="My personal blog site, powered by Hexo and github.io.">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>changliang.io</title>
+    <title>CAD中快速统计块的数量 · changliang.io</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -77,6 +77,8 @@
 
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >changliang.io</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">CAD中快速统计块的数量</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>changliang.io</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/space2-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/space1-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            changliang.io
-            <!-- 文章页  -->
+            CAD中快速统计块的数量
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,46 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                Another blog by Azure
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "软件">软件</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "CAD">CAD</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">367</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/09/27</span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,195 +396,45 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/27/CAD中快速统计块的数量/" >
-            
-                <span>CAD中快速统计块的数量</span>
-        </a>
-        <div class="abstract-content">
-            最近在做一个项目时需要统计图纸中的摄像头点位等数量，一个一个数实在太麻烦了，在网上找到了两种方法，特此收藏记录。
-方法一~使用“QSELECT”命令（转自https://www.jb51.net/autocad/470914.html）1、在打开的CAD图纸中，输入命令“QSELECT”2、按空格键，显示“快速选择”窗口，3、选择对应的对象类型，这里现在“所有图元”。4、选择搜索范围，这里选择已知的图形，应用到“当前选择”。5、选择特性，有颜色、图层、线宽、线性比例等等。6、选择运算符，有等于、不等于、大于、小于、全选五种。7、选择特性对应的值，每个特性对应的值不一样。8、点“确定”，在...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/27</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "软件">软件</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CAD">CAD</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>最近在做一个项目时需要统计图纸中的摄像头点位等数量，一个一个数实在太麻烦了，在网上找到了两种方法，特此收藏记录。</p>
+<h1 id="方法一-使用“QSELECT”命令（转自https-www-jb51-net-autocad-470914-html）"><a href="#方法一-使用“QSELECT”命令（转自https-www-jb51-net-autocad-470914-html）" class="headerlink" title="方法一~使用“QSELECT”命令（转自https://www.jb51.net/autocad/470914.html）"></a>方法一~使用“QSELECT”命令（转自<a href="https://www.jb51.net/autocad/470914.html）" target="_blank" rel="noopener">https://www.jb51.net/autocad/470914.html）</a></h1><p>1、在打开的CAD图纸中，输入命令“QSELECT”<br><img src="https://files.jb51.net/file_images/article/201606/20160622145731205.jpg" alt="图1"><br>2、按空格键，显示“快速选择”窗口，<br><img src="https://files.jb51.net/file_images/article/201606/20160622145731206.jpg" alt="图2"><br>3、选择对应的对象类型，这里现在“所有图元”。<br><img src="https://files.jb51.net/file_images/article/201606/20160622145731207.jpg" alt="图3"><br>4、选择搜索范围，这里选择已知的图形，应用到“当前选择”。<br><img src="https://files.jb51.net/file_images/article/201606/20160622145731208.jpg" alt="图4"><br>5、选择特性，有颜色、图层、线宽、线性比例等等。<br><img src="https://files.jb51.net/file_images/article/201606/20160622145731209.jpg" alt="图5"><br>6、选择运算符，有等于、不等于、大于、小于、全选五种。<br><img src="https://files.jb51.net/file_images/article/201606/20160622145731210.jpg" alt="图6"><br>7、选择特性对应的值，每个特性对应的值不一样。<br><img src="https://files.jb51.net/file_images/article/201606/20160622145731211.jpg" alt="图7"><br>8、点“确定”，在命令栏中就可以显示对象的数量了。<br><img src="https://files.jb51.net/file_images/article/201606/20160622145731212.jpg" alt="图8"></p>
+<h1 id="方法二-使用“FILTER”命令"><a href="#方法二-使用“FILTER”命令" class="headerlink" title="方法二~使用“FILTER”命令"></a>方法二~使用“FILTER”命令</h1><p>1、输入快捷命令 fi ,跳出对象选择过滤器窗口。<br>2、在“选择过滤器”下拉列表中找到“块名”，可以点击“选择…”按钮快速选择块名，也可以在下面的文本框内手动输入块名。<br>3、点击“添加到列表（L）”将要过滤的块名添加到最上方的列表中。<br>4、点击“应用”按钮，完成过滤。<br>5、然后选择需要过滤块的区域，命令窗口中就会显示对象的数量了：“选择对象: 指定对角点: 找到 XX 个”。</p>
+
     </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/25/一个漫长的标/" >
-            
-                <span>一个漫长的标</span>
-        </a>
-        <div class="abstract-content">
-            从2017年底接触投标工作以来，这次的标是我经手的金额最大、规模最大也是耗费时间最长的标了，所以有必要在这里记录一下。
-这个项目招标金额虽然不如上次的另一个项目份额大，但却是在5G时代到来之际非常重要的一个标。从8月底招标方发布招标公告，开始编写投标方案，到后期全省17地市的兄弟都汇集到省公司，一屋子人每天忙忙碌碌到后半夜，编写各地市定制化的资源、方案，真的很让人触动。其实这对于经常接触投标工作的人也许是很平常的事，但是这次大家齐心协力，一起经历了20多天的奋斗，真的很不容易，直到最后顺利完成了所有七个投标标书的生成盖章和上传，大家还在紧张的核对招投标文件是否有遗漏。
-开标时间是第二天的...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/25</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "投标">投标</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/08/新的开始/" >
-            
-                <span>新的开始</span>
-        </a>
-        <div class="abstract-content">
-            写在前面的话之前从高中就喜欢鼓捣网站，后来接触多了编程语言，开始鼓捣博客，PHP折腾的比较多，主要是用Wordpress，改主题，改插件，等等……但是技术一直没什么长进，另外，主要是经常“喜新厌旧”的，就拿“新的开始”、“Hello World”这两个主题起过头的博客都不知道多少个了，总是无法坚持写，最多的一个博客可能写过3、4年吧，最后也存了个档就删除了。
-关于域名说说这个域名：changliang.io，也是我的名字域名，因此对我来说意义非凡，但真正让我有注册这个域名的灵感还是在学习Python时，老师讲到的“常量”，（当然，我初中就知道常量的意思，我也曾近因为这个在计算机课上很尴尬...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/08</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "域名">域名</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "服务器">服务器</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "博客">博客</a>
-    
-</div>
-            
-        </div>
-    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/Azure.jpg >
-    <div class="profile-name">Azure</div>
-    
-    <div class="profile-signature">
-        Real me
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+        </li>
+        <li class="previous">
             
-                <a href="mailto:c#ichl.info" class="iconfont-archer email" title=email ></a>
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/09/25/一个漫长的标/" title= "一个漫长的标">
+                    <div class="prevTitle">一个漫长的标</div>
+                </a>
             
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
-            
-                <a href="//github.com/ichl" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
     
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-    
-        
-    
-        
-            
-                <a href="//weibo.com/azure" class="iconfont-archer weibo" target="_blank" title=weibo></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
     
 
-    </div>
-    
-    
-        <div class="friends">
-            <div>FRIENDS</div>
-            
-                
-            
-                
-            
-                
-            
-        </div>
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -612,6 +507,24 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#方法一-使用“QSELECT”命令（转自https-www-jb51-net-autocad-470914-html）"><span class="toc-number">1.</span> <span class="toc-text">方法一~使用“QSELECT”命令（转自https://www.jb51.net/autocad/470914.html）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#方法二-使用“FILTER”命令"><span class="toc-number">2.</span> <span class="toc-text">方法二~使用“FILTER”命令</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -765,6 +678,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
