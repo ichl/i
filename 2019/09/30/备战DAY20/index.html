@@ -274,7 +274,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">375</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">381</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -400,26 +400,16 @@ height:50vh;
     <article class="article-entry">
         <p>今天离考试还有20天,今天复习的重点如下：</p>
 <h3 id="第一部分：数据模型及数据库的相关操作"><a href="#第一部分：数据模型及数据库的相关操作" class="headerlink" title="第一部分：数据模型及数据库的相关操作"></a>第一部分：数据模型及数据库的相关操作</h3><h4 id="相关定义"><a href="#相关定义" class="headerlink" title="相关定义"></a>相关定义</h4><p>&lt;1&gt; 数据模型是数据特征的抽象,包括<code>数据结构</code>、<code>数据操作</code>和<code>数据约束</code>三部分组成。<br>&lt;2&gt; <code>层次模型</code>、<code>网状模型</code>和<code>关系模型</code>是最常用的三种数据模型。</p>
-<h4 id="数据库的操作"><a href="#数据库的操作" class="headerlink" title="数据库的操作"></a>数据库的操作</h4><p><em>SELECT查询语句格式</em></p>
+<h4 id="数据库的操作"><a href="#数据库的操作" class="headerlink" title="数据库的操作"></a>数据库的操作</h4><p><strong>SELECT查询语句格式</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SELECT[ALL|DISTINCT]&lt;目标列表达式&gt;[,&lt;目标列表达式&gt;]…</span><br><span class="line">FROM&lt;表名或视图名&gt;[,&lt;表名或视图名&gt;]…</span><br><span class="line">[WHERE&lt;条件表达式&gt;]</span><br><span class="line">[GROUP BY&lt;列名1&gt;[HAVING&lt;条件表达式&gt;]</span><br><span class="line">[ORDER BY&lt;列名2&gt;[ASC|DESC]]</span><br></pre></td></tr></table></figure>
 
 <p>其中,WHERE可以和IN 操作符连用,在 WHERE 子句中规定多个值。如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">SELECT</span><br><span class="line">    CName,</span><br><span class="line">    S.SID,</span><br><span class="line">    SName</span><br><span class="line">FROM</span><br><span class="line">    S,</span><br><span class="line">    T,</span><br><span class="line">    C,</span><br><span class="line">    STC</span><br><span class="line">WHERE</span><br><span class="line">    T.CourseID IN(</span><br><span class="line">    SELECT</span><br><span class="line">        T.CourseID</span><br><span class="line">    FROM</span><br><span class="line">        T</span><br><span class="line">    WHERE</span><br><span class="line">        TName = &quot;张大民&quot;</span><br><span class="line">) AND STC.CID = T.CourseID AND C.CID = T.CourseID AND STC.SID IN(</span><br><span class="line">    SELECT</span><br><span class="line">        SID</span><br><span class="line">    FROM</span><br><span class="line">        STC</span><br><span class="line">    WHERE</span><br><span class="line">        Score &gt; 90</span><br><span class="line">) AND S.SID = STC.SID</span><br><span class="line">ORDER BY</span><br><span class="line">    CName,</span><br><span class="line">    Score</span><br><span class="line">DESC</span><br></pre></td></tr></table></figure>
 
-<p><em>其他数据库操作语句</em></p>
+<p><strong>其他数据库操作语句</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE `TEST`</span><br><span class="line">USE `TEST`</span><br><span class="line">DROP DATABASE`TEST`</span><br><span class="line">CREATE TABLE `S`</span><br></pre></td></tr></table></figure>
 
-<h3 id="第二部分：网络层次结构"><a href="#第二部分：网络层次结构" class="headerlink" title="第二部分：网络层次结构"></a>第二部分：网络层次结构</h3><h4 id="OSI-七层模型"><a href="#OSI-七层模型" class="headerlink" title="OSI 七层模型"></a>OSI 七层模型</h4><p><em>相关定义</em><br>OSI的7层从上到下分别是</p>
-<ol start="7">
-<li>应用层</li>
-<li>表示层</li>
-<li>会话层</li>
-<li>传输层</li>
-<li>网络层</li>
-<li>数据链路层</li>
-<li>物理层  </li>
-</ol>
-<p>其中高层（即7、6、5、4层）定义了应用程序的功能，下面3层（即3、2、1层）主要面向通过网络的端到端的数据流。</p>
+<h3 id="第二部分：网络层次结构"><a href="#第二部分：网络层次结构" class="headerlink" title="第二部分：网络层次结构"></a>第二部分：网络层次结构</h3><h4 id="OSI-七层模型"><a href="#OSI-七层模型" class="headerlink" title="OSI 七层模型"></a>OSI 七层模型</h4><p><strong>相关定义</strong><br>OSI的7层从上到下分别是<br>7.应用层<br>6.表示层<br>5.会话层<br>4.传输层<br>3.网络层<br>2.数据链路层<br>1.物理层<br>其中高层（即7、6、5、4层）定义了应用程序的功能，下面3层（即3、2、1层）主要面向通过网络的端到端的数据流。</p>
 
     </article>
     <!-- license  -->
