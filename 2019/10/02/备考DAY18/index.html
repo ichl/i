@@ -22,7 +22,7 @@
     <meta name="description" content="My personal blog site, powered by Hexo and github.io.">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CAD中快速统计块的数量 · changliang.io</title>
+    <title>备战通信工程师考试：DAY18 · changliang.io</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/" >changliang.io</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">CAD中快速统计块的数量</a>
+                <a href="#" class="post-name">备战通信工程师考试：DAY18</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            CAD中快速统计块的数量
+            备战通信工程师考试：DAY18
             <!-- 404 -->
             
         </h1>
@@ -266,20 +266,20 @@ height:50vh;
                 
                     <div class= post-intro-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "软件">软件</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "备考">备考</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CAD">CAD</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "通信专业技术人员职业水平考试">通信专业技术人员职业水平考试</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">345</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1.4k</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/09/27</span>
+                    <span class="post-intro-time">2019/10/02</span>
                     
                     <span class="shareWrapper">
                         <span class="iconfont-archer shareIcon">&#xe71d;</span>
@@ -398,28 +398,98 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>最近在做一个项目时需要统计图纸中的摄像头点位等数量，一个一个数实在太麻烦了，在网上找到了两种方法，特此收藏记录。</p>
-<h2 id="方法一-使用QSELECT命令"><a href="#方法一-使用QSELECT命令" class="headerlink" title="方法一:使用QSELECT命令"></a>方法一:使用<code>QSELECT</code>命令</h2><blockquote>
-<ol>
-<li>在打开的CAD图纸中，输入命令“QSELECT”</li>
-<li>按空格键，显示“快速选择”窗口，</li>
-<li>选择对应的对象类型，这里现在“所有图元”。</li>
-<li>选择搜索范围，这里选择已知的图形，应用到“当前选择”。</li>
-<li>选择特性，有颜色、图层、线宽、线性比例等等。</li>
-<li>选择运算符，有等于、不等于、大于、小于、全选五种。</li>
-<li>选择特性对应的值，每个特性对应的值不一样。</li>
-<li>点“确定”，在命令栏中就可以显示对象的数量了。</li>
+        <p>今天离考试还有<code>18</code>天,今天复习的重点如下：</p>
+<h3 id="第一部分：数据存储"><a href="#第一部分：数据存储" class="headerlink" title="第一部分：数据存储"></a>第一部分：数据存储</h3><h4 id="数据与数据存储"><a href="#数据与数据存储" class="headerlink" title="数据与数据存储"></a>数据与数据存储</h4><p><strong>相关定义</strong><br>数据存储是根据不同的应用环境，通过采取合理、安全和有效的方式将数据保存到某些介质上，并能保证有效的访问。<br>它包含两方面的含义，一方面，它是数据临时或长期驻留的物理介质；另一方面，它是保证数据完整、安全存放的方式或行为。数据存储把这两个方面结合起来，向客户提供一套数据存放的解决方案。</p>
+<h4 id="存储器的分类"><a href="#存储器的分类" class="headerlink" title="存储器的分类"></a>存储器的分类</h4><ol>
+<li>按存储介质分类：<code>半导体存储器</code>、<code>磁表面存储器</code>、<code>光盘存储器</code>；</li>
+<li>按存储器在计算机系统中的作用分类：<code>主存储器</code>、<code>高速缓冲存储器</code>、<code>辅助存储器</code>；</li>
+<li>按存取方式分类：<code>随机存取存储器</code>、<code>顺序存取存储器</code>、<code>直接存取存储器</code>；</li>
+<li>按读写功能分类：<code>只读存储器</code>、<code>随机（读写）存储器</code>；</li>
+<li>按数据保持时间分类：<code>易失性存储器</code>、<code>非易失性存储器</code>。</li>
 </ol>
-</blockquote>
-<h2 id="方法二-使用FILTER命令"><a href="#方法二-使用FILTER命令" class="headerlink" title="方法二:使用FILTER命令"></a>方法二:使用<code>FILTER</code>命令</h2><blockquote>
+<h4 id="磁盘的结构和工作原理"><a href="#磁盘的结构和工作原理" class="headerlink" title="磁盘的结构和工作原理"></a>磁盘的结构和工作原理</h4><p><strong>&lt;1&gt; 结构</strong><br>物理结构：</p>
 <ol>
-<li>输入快捷命令 fi ,跳出对象选择过滤器窗口。</li>
-<li>在“选择过滤器”下拉列表中找到“块名”，可以点击“选择…”按钮快速选择块名，也可以在下面的文本框内手动输入块名。</li>
-<li>点击“添加到列表（L）”将要过滤的块名添加到最上方的列表中。</li>
-<li>点击“应用”按钮，完成过滤。</li>
-<li>然后选择需要过滤块的区域，命令窗口中就会显示对象的数量了：“选择对象: 指定对角点: 找到 XX 个”。</li>
+<li>盘片</li>
+<li>主轴（电机）</li>
+<li>磁头（磁头臂）</li>
+<li>音圈电机</li>
 </ol>
-</blockquote>
+<p>逻辑结构</p>
+<ol>
+<li>盘面</li>
+<li>磁道</li>
+<li>扇区</li>
+<li>柱面</li>
+</ol>
+<p><strong>&lt;2&gt; 工作原理</strong><br>在平整的磁性表面存储和检索数字数据。写入时，将脉冲代码以磁化电流形式加入磁头线圈，使记录介质产生相应的磁化状态，即<strong>电磁转换</strong>；读出时，磁层中的磁化翻转使磁头的读出线圈产生感应信号，即<strong>磁电转换</strong>。</p>
+<h4 id="固态盘的结构"><a href="#固态盘的结构" class="headerlink" title="固态盘的结构"></a>固态盘的结构</h4><p>硬件层面，固态盘使用半导体的Flash芯片作为存储介质，类似于内存，允许通过地址直接访问任何一个存储单元。<br>从外观上看，固态盘的硬件由PCB（印刷电路板）、SSD控制器（主控芯片）、缓存芯片、Flash存储阵列和SSD接口组成。</p>
+<h4 id="磁盘阵列"><a href="#磁盘阵列" class="headerlink" title="磁盘阵列"></a>磁盘阵列</h4><p>&lt;1&gt; 磁盘阵列的组成<br>磁盘阵列由RAID控制器、磁盘控制器和磁盘组成。<br>&lt;2&gt; 磁盘阵列分级</p>
+<ol>
+<li>RAID 0 （条带化存储，读写速率为单个磁盘的N倍，N为磁盘总数）</li>
+<li>RAID 1 （镜像，空间利用率为50%）</li>
+<li>RAID 2 （纠错海明码，RAID 0加入校验，很少用）</li>
+<li>RAID 3 （简单的奇偶校验，增加专用校验盘）</li>
+<li>RAID 4 （类似RAID 3，单一校验盘，很少用）</li>
+<li>RAID 5 （类似RAID 4，校验数据分布在所有磁盘上，最常见）</li>
+<li>混合RAID （RAID 0+1、RAID 1+0）</li>
+</ol>
+<h4 id="直接直连存储（DAS）"><a href="#直接直连存储（DAS）" class="headerlink" title="直接直连存储（DAS）"></a>直接直连存储（DAS）</h4><p>&lt;1&gt; 定义<br>DAS是一种将存储设备通过总线适配器或电缆（SCSI或FC等）直接连接到主机的架构。<br>&lt;2&gt; 连接<br>DAS连接有内部连接和外部连接两种形式。<br>&lt;3&gt;优缺点</p>
+<ol>
+<li>依赖服务器主机操作系统进行数据的读写和存储维护管理，占用服务器主机资源。</li>
+<li>DAS与服务器主机的连接通道通常采用SCSI连接，受到有限的SCSI通道连接影响较大。</li>
+<li>服务器集群扩展或存储阵列容量的扩展都会造成业务系统的停机。</li>
+</ol>
+<h4 id="网络连接存储（NAS）"><a href="#网络连接存储（NAS）" class="headerlink" title="网络连接存储（NAS）"></a>网络连接存储（NAS）</h4><p>&lt;1&gt; 定义<br>NAS是一种将NAS设备部署到网络中的结构。<br>NAS设备是单独为网络数据存储而开发的一种文件服务器，基于标准网络协议实现数据传输。<br>&lt;2&gt; 特点</p>
+<ol>
+<li>即插即用，可扩展性好。</li>
+<li>具有独立的IP地址，通过TCP/IP连接，可扩展性好。</li>
+<li>专用操作系统支持不同的文件系统，支持异构系统的文件共享。</li>
+<li>NAS设备物理位置灵活，便于部署、更新和升级。</li>
+<li>不需要其他网络设施投入，成本低。</li>
+<li>基于文件存储，可实现多个主机之间的文件共享。</li>
+<li>没有解决备份过程中的带宽消耗问题。</li>
+<li>NAS设备存储空间的扩大有限，扩展能力有限。</li>
+</ol>
+<h4 id="存储区域网络（SAN）"><a href="#存储区域网络（SAN）" class="headerlink" title="存储区域网络（SAN）"></a>存储区域网络（SAN）</h4><p>&lt;1&gt; 定义<br>SAN是通过专用高速网络将一个或多个网络存储设备和计算机系统连接起来的专用存储系统。大多采用光纤通道（FC）技术，通过FC交换机连接存储阵列和服务器主机，建立专用于数据存储的区域网络。<br>SAN本身就是一个存储网络，可以是交换式网络，也可以是共享式网络。<br>&lt;2&gt; 发展<br>FC SAN -&gt; IP SAN<br>&lt;3&gt; 特点</p>
+<ol>
+<li>解决了存储网络和应用网络争用网络带宽的问题。</li>
+<li>实现了有效的数据隔离。</li>
+<li>具有较远的传输距离。</li>
+<li>具有较高的传输带宽。</li>
+<li>具有较高的可扩展性。</li>
+<li>数据具有高可用性。</li>
+<li>IO通道大多使用FC技术，需购买光纤通道卡和FC交换机，成本高。</li>
+<li>不同文件系统间的数据无法共享。</li>
+</ol>
+<h4 id="数据备份和恢复"><a href="#数据备份和恢复" class="headerlink" title="数据备份和恢复"></a>数据备份和恢复</h4><p>&lt;1&gt; 备份系统的逻辑结构</p>
+<ol>
+<li>备份原系统</li>
+<li>备份管理器</li>
+<li>备份目标系统</li>
+</ol>
+<p>&lt;2&gt; 备份的分类</p>
+<ol>
+<li>完全备份</li>
+<li>增量备份</li>
+<li>差分备份</li>
+</ol>
+<h3 id="第二部分：软件开发"><a href="#第二部分：软件开发" class="headerlink" title="第二部分：软件开发"></a>第二部分：软件开发</h3><h4 id="程序设计语言中的基本概念"><a href="#程序设计语言中的基本概念" class="headerlink" title="程序设计语言中的基本概念"></a>程序设计语言中的基本概念</h4><p>&lt;1&gt; 数据定义与运算</p>
+<ol>
+<li>标识符</li>
+<li>数据类型</li>
+<li>变量</li>
+<li>字面值</li>
+<li>常量</li>
+<li>运算符与表达式</li>
+<li>输入/输出</li>
+</ol>
+<p>&lt;2&gt; 语句与控制结构</p>
+<ol>
+<li>赋值语句</li>
+<li>符合语句？</li>
+<li>控制语句</li>
+</ol>
+<p>&lt;3&gt;子程序<br>&lt;4&gt;程序设计风格</p>
 
     </article>
     <!-- license  -->
@@ -428,17 +498,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">下一篇</div>
-                <a href= "/2019/09/30/开始备战中级工程师考试/" title= "开始备战中级工程师考试，加油！">
-                    <div class="nextTitle">开始备战中级工程师考试，加油！</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">上一篇</div>
-                <a href= "/2019/09/08/新的开始/" title= "新的开始">
-                    <div class="prevTitle">新的开始</div>
+                <a href= "/2019/10/02/为Hexo配置aplayer播放器/" title= "为Hexo配置Aplayer播放器">
+                    <div class="prevTitle">为Hexo配置Aplayer播放器</div>
                 </a>
             
         </li>
@@ -547,7 +612,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#方法一-使用QSELECT命令"><span class="toc-number">1.</span> <span class="toc-text">方法一:使用QSELECT命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#方法二-使用FILTER命令"><span class="toc-number">2.</span> <span class="toc-text">方法二:使用FILTER命令</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一部分：数据存储"><span class="toc-number">1.</span> <span class="toc-text">第一部分：数据存储</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#数据与数据存储"><span class="toc-number">1.1.</span> <span class="toc-text">数据与数据存储</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#存储器的分类"><span class="toc-number">1.2.</span> <span class="toc-text">存储器的分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#磁盘的结构和工作原理"><span class="toc-number">1.3.</span> <span class="toc-text">磁盘的结构和工作原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#固态盘的结构"><span class="toc-number">1.4.</span> <span class="toc-text">固态盘的结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#磁盘阵列"><span class="toc-number">1.5.</span> <span class="toc-text">磁盘阵列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#直接直连存储（DAS）"><span class="toc-number">1.6.</span> <span class="toc-text">直接直连存储（DAS）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#网络连接存储（NAS）"><span class="toc-number">1.7.</span> <span class="toc-text">网络连接存储（NAS）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#存储区域网络（SAN）"><span class="toc-number">1.8.</span> <span class="toc-text">存储区域网络（SAN）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据备份和恢复"><span class="toc-number">1.9.</span> <span class="toc-text">数据备份和恢复</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二部分：软件开发"><span class="toc-number">2.</span> <span class="toc-text">第二部分：软件开发</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#程序设计语言中的基本概念"><span class="toc-number">2.1.</span> <span class="toc-text">程序设计语言中的基本概念</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
