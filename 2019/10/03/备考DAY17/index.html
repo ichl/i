@@ -274,7 +274,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">1k</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1.2k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -399,7 +399,7 @@ height:50vh;
             <main class="main post-page">
     <article class="article-entry">
         <p>今天离考试还有<code>17</code>天,今天复习的重点如下：</p>
-<h3 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h3><h4 id="云计算的定义"><a href="#云计算的定义" class="headerlink" title="云计算的定义"></a>云计算的定义</h4><p>　　云计算是一种模式，能以泛在的、便利的、按需的方式通过网络访问可配置的计算机资源（例如：网络、服务器、存储器、应用和服务），这些资源可以实现快速部署与发布，并且只需要极少的管理成本或服务提供商的干预。</p>
+<h3 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h3><h4 id="云计算的定义"><a href="#云计算的定义" class="headerlink" title="云计算的定义"></a>云计算的定义</h4><p>云计算是一种模式，能以泛在的、便利的、按需的方式通过网络访问可配置的计算机资源（例如：网络、服务器、存储器、应用和服务），这些资源可以实现快速部署与发布，并且只需要极少的管理成本或服务提供商的干预。</p>
 <h4 id="云计算的3中主要服务模式"><a href="#云计算的3中主要服务模式" class="headerlink" title="云计算的3中主要服务模式"></a>云计算的3中主要服务模式</h4><ol>
 <li>SaaS软件即服务 （以服务的方式将应用软件提供给互联网最终用户，如Office Online、在线CRM等）</li>
 <li>PaaS平台即服务 （以服务的方式提供应用程序开发和部署平台，如微软Azure平台、谷歌AppEngine）</li>
@@ -420,7 +420,7 @@ height:50vh;
 <li>桌面虚拟化</li>
 <li>云管理平台</li>
 </ol>
-<h4 id="OpenStack相关概念"><a href="#OpenStack相关概念" class="headerlink" title="OpenStack相关概念"></a>OpenStack相关概念</h4><p>&lt;1&gt; 云操作系统框架的概念<br>　　云操作系统就是面向云计算的一个核心软件，它用来管理云计算所用到的各类资源，让系统具备为用户提供服务的能力,一个完整的云操作系统具备以下5个方面的主要功能：</p>
+<h4 id="OpenStack相关概念"><a href="#OpenStack相关概念" class="headerlink" title="OpenStack相关概念"></a>OpenStack相关概念</h4><p>&lt;1&gt; 云操作系统框架的概念<br>云操作系统就是面向云计算的一个核心软件，它用来管理云计算所用到的各类资源，让系统具备为用户提供服务的能力,一个完整的云操作系统具备以下5个方面的主要功能：</p>
 <ol>
 <li>资源接入与抽象</li>
 <li>资源分配与调度</li>
@@ -428,7 +428,7 @@ height:50vh;
 <li>系统管理维护</li>
 <li>人机交互支持</li>
 </ol>
-<p>　　OpenStack等操作系统框架需要由其他软件配合，完成上述云操作系统具备的主要功能。基于这个框架，可以集成各类不同的组件，构造满足不同场景需要的云操作系统。<br>&lt;2&gt; OpenStack的设计原理和体系结构<br>　　OpenStack是由一系列具有RESTful接口的Web服务实现的，是一系列组件服务的集合。<br>　　体系结构:并不是单一的服务，其含有子组件，子组件内有模块实现各自的功能，通过消息队列和数据库，各个组件可以相互调用，互相通信，模块间耦合度比较低，可以灵活的根据需要组合出适合不同用户的需求的架构。<br>&lt;3&gt; OpenStack的核心项目的功能</p>
+<p>OpenStack等操作系统框架需要由其他软件配合，完成上述云操作系统具备的主要功能。基于这个框架，可以集成各类不同的组件，构造满足不同场景需要的云操作系统。<br>&lt;2&gt; OpenStack的设计原理和体系结构<br>OpenStack是由一系列具有RESTful接口的Web服务实现的，是一系列组件服务的集合。<br><strong>体系结构</strong>:OpenStack并不是单一的服务，其含有子组件，子组件内有模块实现各自的功能，通过消息队列和数据库，各个组件可以相互调用，互相通信，模块间耦合度比较低，可以灵活的根据需要组合出适合不同用户的需求的架构。<br>&lt;3&gt; OpenStack的核心项目的功能</p>
 <ol>
 <li>计算：Nova （Nova是一套控制器，用于为单个用户或群组管理虚拟机实例的整个生命周期）</li>
 <li>对象存储：Swift （Swift用在大规模可扩展系统中，实现对象存储，允许进行存储或检索，可为Glance提供镜像存储，为Cinder提供卷备份服务）</li>
@@ -443,6 +443,19 @@ height:50vh;
 <li>大数据服务：Sahara （Sahara提供简单的大数据工具集群创建和管理服务，扩展到提供分析即服务层面的大数据业务能力）</li>
 <li>裸机管理：Ironic （Ironic是裸机[物理机]的管理解决方案。</li>
 </ol>
+<h4 id="Docker容器典型应用场景"><a href="#Docker容器典型应用场景" class="headerlink" title="Docker容器典型应用场景"></a>Docker容器典型应用场景</h4><ol>
+<li>对应用进行自动打包和部署</li>
+<li>创建轻量私有的PaaS环境</li>
+<li>自动化测试和持续整合与部署</li>
+<li>部署和扩展Web应用数据库和后端服务</li>
+</ol>
+<h4 id="云计算的安全架构和核心内容"><a href="#云计算的安全架构和核心内容" class="headerlink" title="云计算的安全架构和核心内容"></a>云计算的安全架构和核心内容</h4><p>云安全架构是端到端的安全架构，有以下几个核心部分：</p>
+<ol>
+<li>终端安全</li>
+<li>管道安全</li>
+<li>平台和数据安全</li>
+<li>管理安全</li>
+</ol>
 
     </article>
     <!-- license  -->
@@ -450,6 +463,11 @@ height:50vh;
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="next">
+            
+                <div class="nextSlogan">下一篇</div>
+                <a href= "/2019/10/04/备考DAY16/" title= "备战通信工程师考试：DAY16">
+                    <div class="nextTitle">备战通信工程师考试：DAY16</div>
+                </a>
             
         </li>
         <li class="previous">
@@ -565,7 +583,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#云计算"><span class="toc-number">1.</span> <span class="toc-text">云计算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的定义"><span class="toc-number">1.1.</span> <span class="toc-text">云计算的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的3中主要服务模式"><span class="toc-number">1.2.</span> <span class="toc-text">云计算的3中主要服务模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的4种部署方式"><span class="toc-number">1.3.</span> <span class="toc-text">云计算的4种部署方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算关键技术"><span class="toc-number">1.4.</span> <span class="toc-text">云计算关键技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OpenStack相关概念"><span class="toc-number">1.5.</span> <span class="toc-text">OpenStack相关概念</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#云计算"><span class="toc-number">1.</span> <span class="toc-text">云计算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的定义"><span class="toc-number">1.1.</span> <span class="toc-text">云计算的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的3中主要服务模式"><span class="toc-number">1.2.</span> <span class="toc-text">云计算的3中主要服务模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的4种部署方式"><span class="toc-number">1.3.</span> <span class="toc-text">云计算的4种部署方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算关键技术"><span class="toc-number">1.4.</span> <span class="toc-text">云计算关键技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OpenStack相关概念"><span class="toc-number">1.5.</span> <span class="toc-text">OpenStack相关概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Docker容器典型应用场景"><span class="toc-number">1.6.</span> <span class="toc-text">Docker容器典型应用场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的安全架构和核心内容"><span class="toc-number">1.7.</span> <span class="toc-text">云计算的安全架构和核心内容</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -672,9 +690,36 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 10
+        Total : 11
         </div>
         <!-- search  -->
         
@@ -687,6 +732,11 @@ top:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/04</span><a class="archive-post-title" href= "/2019/10/04/备考DAY16/" >备战通信工程师考试：DAY16</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -747,13 +797,13 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="通信专业技术人员职业水平考试"><span class="iconfont-archer">&#xe606;</span>通信专业技术人员职业水平考试</span>
     
-        <span class="sidebar-tag-name" data-tags="经典音乐"><span class="iconfont-archer">&#xe606;</span>经典音乐</span>
-    
         <span class="sidebar-tag-name" data-tags="软件"><span class="iconfont-archer">&#xe606;</span>软件</span>
     
         <span class="sidebar-tag-name" data-tags="CAD"><span class="iconfont-archer">&#xe606;</span>CAD</span>
     
         <span class="sidebar-tag-name" data-tags="博客"><span class="iconfont-archer">&#xe606;</span>博客</span>
+    
+        <span class="sidebar-tag-name" data-tags="经典音乐"><span class="iconfont-archer">&#xe606;</span>经典音乐</span>
     
         <span class="sidebar-tag-name" data-tags="域名"><span class="iconfont-archer">&#xe606;</span>域名</span>
     
@@ -794,11 +844,11 @@ jsonContent:
     
         <span class="sidebar-category-name" data-categories="备考"><span class="iconfont-archer">&#xe60a;</span>备考</span>
     
-        <span class="sidebar-category-name" data-categories="音乐"><span class="iconfont-archer">&#xe60a;</span>音乐</span>
+        <span class="sidebar-category-name" data-categories="收藏"><span class="iconfont-archer">&#xe60a;</span>收藏</span>
     
         <span class="sidebar-category-name" data-categories="随笔"><span class="iconfont-archer">&#xe60a;</span>随笔</span>
     
-        <span class="sidebar-category-name" data-categories="收藏"><span class="iconfont-archer">&#xe60a;</span>收藏</span>
+        <span class="sidebar-category-name" data-categories="音乐"><span class="iconfont-archer">&#xe60a;</span>音乐</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
