@@ -274,7 +274,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">115</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1.3k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -399,7 +399,37 @@ height:50vh;
             <main class="main post-page">
     <article class="article-entry">
         <p>今天离考试还有<code>15</code>天,今天复习的重点如下：</p>
-<h3 id="网络安全"><a href="#网络安全" class="headerlink" title="网络安全"></a>网络安全</h3><h4 id="网络安全模型"><a href="#网络安全模型" class="headerlink" title="网络安全模型"></a>网络安全模型</h4><p><img src="https://i.loli.net/2019/10/07/i7oEbBMkGZpF3Pe.jpg" alt="网络安全模型"><br>消息通过互联网络从一方传输到另一方，这两方都是事物的主体，通过在互联网络上定义一条从信息源到信息目的地之间的路由，以及两个信息主体之间使用的某种通信协议建立逻辑信息通道，进行消息交换。</p>
+<h3 id="网络安全"><a href="#网络安全" class="headerlink" title="网络安全"></a>网络安全</h3><h4 id="网络安全模型"><a href="#网络安全模型" class="headerlink" title="网络安全模型"></a>网络安全模型</h4><p><img src="https://i.loli.net/2019/10/07/i7oEbBMkGZpF3Pe.jpg" alt="网络安全模型"><br>　　消息通过互联网络从一方传输到另一方，这两方都是事物的主体，通过在互联网络上定义一条从信息源到信息目的地之间的路由，以及两个信息主体之间使用的某种通信协议建立逻辑信息通道，进行消息交换。<br>　　所有用于提供安全性的安全要素主要包含以下两个部分：</p>
+<ol>
+<li>对要发送的信息进行与安全相关的转换。如消息加密；在消息内容上添加用来验证发送者的身份的附加码等。</li>
+<li>两个主体共享一些不希望被攻击者所知的秘密信息,包括在信息交换中使用的加密密钥（在传输之前用于加密消息而在接收之后用于恢复消息）。</li>
+</ol>
+<p>　　要完成上述两个部分的工作，可能需要可信的第三方来完成以下内容：1、负责给两个主体分发秘密信息，同时对攻击者隐藏这些信息；2、仲裁在两个主体之间引起的关于消息传输认证的纷争。</p>
+<h4 id="对称加密原理和消息机密性"><a href="#对称加密原理和消息机密性" class="headerlink" title="对称加密原理和消息机密性"></a>对称加密原理和消息机密性</h4><p>　　对称加密也成为常规加密、私钥或单钥加密。一个对称加密方案由部分组成：</p>
+<ol>
+<li>明文：这是原始消息或数据， 作为算法的输入。</li>
+<li>加密算法：加密算法对明文进行各种替换和转换。</li>
+<li>秘密密钥：秘密密钥也是算法的输入。 算法进行的具体替换和转换取决于这个密钥。</li>
+<li>密文：这是产生的已被打乱的消息输出。 它取决于明文和秘密密钥。 对于一个给定的消息, 两个不同的密钥会产生两个不同的密文。</li>
+<li>解密算法：本质上是加密算法的反向执行，它使用密文和同一密钥产生原始明文。</li>
+</ol>
+<p><img src="https://i.loli.net/2019/10/07/Y6bcs3JBt7v5fiy.jpg" alt="对称加密的简化模型"></p>
+<h4 id="公钥密码原理和消息认证"><a href="#公钥密码原理和消息认证" class="headerlink" title="公钥密码原理和消息认证"></a>公钥密码原理和消息认证</h4><p>　　公钥密码体制有两个密钥，一个可用来加密数据，称为公钥；一个用来解密，称为私钥。私钥保密，公钥公开。公钥密码技术解决了不安全信道无接触安全通信的问题，本质上是解决了不安全信道密钥分发问题。公钥密码技术的另外一种重要应用就是数字签名，为身份认证、不可否认签名等需求提供了一种技术方法。公钥密码方案由6个部分组成：</p>
+<ol>
+<li>明文：算法的输入，它是可读的消息或数据。</li>
+<li>加密算法：加密算法对明文进行各种形式的变换。</li>
+<li>公钥和私钥：算法的输入，这对密钥如果一个密钥用于加密，则另一个密钥就用于解密。加密算法所执行的具体变换取决于输入端提供的公钥或私钥。</li>
+<li>密文：算法的输出，取决于明文和密钥。对于给定的消息，两个不同的密钥将产生两个不同的密文。</li>
+<li>解密算法：该算法接收密文和匹配的密钥，生成原始的明文。<br>　　顾名思义，密钥对中的公钥是公开供其他人使用的，私钥只有自己知道。通常的公钥密码算法根据一个密钥进行加密，根据另一个不同但相关的密钥进行解密。<br>　　目前流行的公钥算法是<code>RSA</code>，它既可以用于加密，可可以用于数字签名。由于速度慢，一般不直接用于数据加密，而用于对称密码算法密钥的传递和数字签名。<br><img src="https://i.loli.net/2019/10/07/o9GDn6P5Utjxg4L.jpg" alt="公钥密码——加密"></li>
+</ol>
+<h4 id="密钥分配和用户认证"><a href="#密钥分配和用户认证" class="headerlink" title="密钥分配和用户认证"></a>密钥分配和用户认证</h4><p>&lt;1&gt; 基于对称加密的密钥分配<br>    对于对称加密，加密双方必须共享同一密钥，而且必须保护密钥不被他人读取。<br>&lt;2&gt; 基于非对称加密的密钥分配<br>    公钥加密的一个重要作用就是处理密钥的分发问题，存在两个不同的方面：公钥的分发和使用公钥加密分发私钥。</p>
+<h4 id="网络访问控制和云安全"><a href="#网络访问控制和云安全" class="headerlink" title="网络访问控制和云安全"></a>网络访问控制和云安全</h4><p>　　网络访问控制（NAC）是对网络进行管理访问的一个概括性术语。NAC对登录到网络的用户进行认证，同时决定该用户可以访问哪些数据，执行哪些操作。NAC同时可以检查用户的计算机或者移动设备（终端）的安全程度。<br>&lt;1&gt; 网络访问控制</p>
+<ol>
+<li>网络访问控制系统的组成元素：访问请求者、策略服务器、网络访问服务器。</li>
+<li>网络访问强制措施：IEEE 802.1x、VLAN、防火墙、DHCP。</li>
+</ol>
+<p>&lt;2&gt;可扩展认证协议（EAP）<br>&lt;3&gt;云安全（按使用量付费的模式）</p>
+<h4 id="WEB安全"><a href="#WEB安全" class="headerlink" title="WEB安全"></a>WEB安全</h4><p>未完待续</p>
 
     </article>
     <!-- license  -->
@@ -527,7 +557,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#网络安全"><span class="toc-number">1.</span> <span class="toc-text">网络安全</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#网络安全模型"><span class="toc-number">1.1.</span> <span class="toc-text">网络安全模型</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#网络安全"><span class="toc-number">1.</span> <span class="toc-text">网络安全</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#网络安全模型"><span class="toc-number">1.1.</span> <span class="toc-text">网络安全模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#对称加密原理和消息机密性"><span class="toc-number">1.2.</span> <span class="toc-text">对称加密原理和消息机密性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#公钥密码原理和消息认证"><span class="toc-number">1.3.</span> <span class="toc-text">公钥密码原理和消息认证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#密钥分配和用户认证"><span class="toc-number">1.4.</span> <span class="toc-text">密钥分配和用户认证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#网络访问控制和云安全"><span class="toc-number">1.5.</span> <span class="toc-text">网络访问控制和云安全</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WEB安全"><span class="toc-number">1.6.</span> <span class="toc-text">WEB安全</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
