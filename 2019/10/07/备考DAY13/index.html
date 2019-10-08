@@ -274,7 +274,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">18</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">2.9k</span>阅读时长: <span class="post-count reading-time">10 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -398,7 +398,44 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>今天离考试还有<code>16</code>天,今天复习的重点如下：</p>
+        <p>今天离考试还有<code>13</code>天,今天复习的重点如下：</p>
+<h3 id="交换技术"><a href="#交换技术" class="headerlink" title="交换技术"></a>交换技术</h3><h4 id="生成树协议"><a href="#生成树协议" class="headerlink" title="生成树协议"></a>生成树协议</h4><p>　　生成树协议（Spanning Tree Protocol，STP）能够实现2层路由的冗余和无环路运行。其基本思想是阻断一些交换机的端口，构建一棵与这些交换机链路相关的且没有环路的STP转发树，构成整个局域网的生成树。这样，2层网络设备网桥能够自动发现一个没有环路的拓扑结构子网，也就是一个生成树，而且能够确定有足够的连接通向这个网络的每一个部分。<br>　　生成树协议用于消除转发环路。</p>
+<h4 id="VLAN"><a href="#VLAN" class="headerlink" title="VLAN"></a>VLAN</h4><p>&lt;1&gt; VLAN交换机互连的方式</p>
+<ol>
+<li>接入链路<br>接入链路（Access Link）是用来将非VLAN标识的工作站或者非VLAN成员资格的VLAN设备接入一个VLAN交换机端口的一个LAN网段，它不能承载标记数据。</li>
+<li>中继链路<br>中继链路（Trunk Link）是只承载标记数据（即具有VLANID标签的数据包）的干线链路，只能支持那些可接收VLAN帧格式并拥有VLAN成员资格的VLAN设备。中继链路最通常的实现就是连接两个VLAN交换机的链路。与中继链路紧密相关的技术就是链路聚合技术，该技术采用VLAN中继协议（VLAN trunk protocol，VTP），即在物理上每台VLAN交换机的多个物理端口是独立的，多条链路是平行的，采用VTP技术处理以后，逻辑上VLAN交换机的多个物理端口为一个逻辑端口，多条物理链路为一条逻辑链路。这样，VLAN交换机上使用生成树协议（STP）就不会将物理上的多条平行链路构成的环路终止，而且，带有VLAN ID标签的数据流可以在多条链路上同时进行传输共享，实现数据流的高效、快速、平衡传输。</li>
+<li>混合链路<br>混合链路（Hybrid Link）是接入链路和中继链路混合所组成的链路，即连接 VLAN-aware设备和VLAN-unaware设备的链路。这种链路可以同时承载标记数据和非标记数据。</li>
+</ol>
+<p>&lt;2&gt; VLAN的配置<br>配置前需要确定：是否需要开启VTP、需要配置的VLAN数量以及每个VLAN需要多少个端口。<br>Enable VTP（可选）-&gt; Enable Trunk-&gt; Create VLANs-&gt; Assign VLAN to ports。</p>
+<h4 id="多层交换技术"><a href="#多层交换技术" class="headerlink" title="多层交换技术"></a>多层交换技术</h4><p>&lt;1&gt; 3层交换技术</p>
+<ol>
+<li>3层交换技术的基本概念<br>传统的交换技术是在OSI模型中的数据链路层中实现的，存在着网络带宽利用效率不高的问题，而利用网桥实现LAN之间的信息传送无法隔离广播帧，广播过多就可能造成网络瘫痪，因此引入了路由技术。在2层交换技术基础上引入3层路由技术，大大提高了3层报文的处理速度，实现利用第3层协议中的信息来加强第2层交换功能的机制，因此，这种TCP/IP上的第3层交换技术（Layer 3 Switching，L3S）也称为IP交换技术、高速路由技术等。</li>
+<li>3层交换技术的基本原理<br>大部分企业网已变成实施TCP/IP的Web技术的内联网，用户的数据往往越过本地的网络在网际间传送，因而，路由器常常不堪重负。解决方法一：安装性能更强的超级路由器。然而，在建交换网规划中，这种方法的开销太大，投资显然是不合理的。解决方法二：引入3层交换技术。3层交换原理比较复杂，不同网络环境下，不同厂商的3层交换机的3层交换流程都不完全相同，但是目标都是在源地址和目的地址之间建立一条更为直接的第2层通路，就没有必要经过路由器转发数据包。也就是第3层交换使用第3层路由协议确定传送路径，此路径可以只使用一次，也可以存储起来，供以后使用，实现数据包通过这条虚路径绕过路由器快速发送。这就是“一次路由，多次交换”的基本思路。</li>
+<li>3层交换技术的基本功能<br>在3层交换中，可以实现同一3层交换机上的不同网段设备进行通信和不同3层交换机上的不同网段设备进行通信两种情况，两种情况只是具体交换流程有所区别。同时，平时说的多层交换机，多指3层交换机，也就是把2层交换和3层路由结合起来。</li>
+</ol>
+<p>&lt;2&gt; 4层交换技术    </p>
+<ol>
+<li>4层交换技术的基本概念<br>在2层、3层交换技术基础上引入4层传输技术（OSI模型的第4层是传输层，在IP协议栈中这是TCP/UDP所在的协议层），它决定传输不仅仅依据MAC地址或源/目标IP地址，而且依据TCP/UDP（第4层）应用端口号。第2层与第3层交换主要作用是解决了局域网和互联网的带宽及容量的问题，第4层交换的主要作用是提高了服务器和服务器群的可靠性、可扩性和端到端的性能，实现了客户机与服务器之间数据平滑地流动。</li>
+<li>4层交换技术的基本原理<br>4层交换技术利用数据流中的TCP/UDP应用端口号、标记应用会话开始与结束的“SYN/FIN”位，以及IP源/目的地址做出向何处转发会话传输流的智能决定，而且其从开始到结束一直跟踪和维持各个会话，因此，第4层交换机是真正的“会话交换机”。第4层交换技术根据用户的请求中的上述信息构建的不同规则，实现多台服务器间负载均衡。</li>
+<li>4层交换技术的基本功能<br>第4层交换技术在大型企业数据中心、Internet服务提供商、内容提供商，以及多台服务器上复制起到很大的作用。第4层交换机根据会话和应用层信息做出转发决定，这就不同于路由器根据链路或网络节点的可用性和性能做出转发决定，这样能够被转发到最理想的服务器，体现了传输数据和实现多台服务器间负载均衡的理想机制。总之，4层交换运用越来越多，它可以通过4层端口进行分配。</li>
+</ol>
+<p>&lt;3&gt; 7层交换技术</p>
+<ol>
+<li>7层交换技术的基本概念<br>第7层交换技术又称智能交换技术，是以内容为主的交换技术，可以有效地实现数据流的优化和智能负载均衡。数据流的传输决策不再只是依赖MAC地址、IP地址和端口号进行，而扩展到具体的内容上进行。目标节点可以打开接收到的具体数据流，根据内容进行负载均衡处理，体现了智能性，因此也被看成是“应用交换技术”。</li>
+<li>7层交换技术的基本原理<br>第7层交换技术不再依赖于端口进行数据流的分析，而是利用数据流中的内容本身进行业务的分类，并作出负载均衡策略的选择等，而且可以验证数据内容的正确性。</li>
+<li>7层交换技术的基本功能<br>第7层交换技术是区分同一端口号下不同应用类型而做出的智能决策，保证了不同类型的传输流被赋予不同的优先级，在提升速度的同时优化Web访问。</li>
+</ol>
+<h4 id="CDN"><a href="#CDN" class="headerlink" title="CDN"></a>CDN</h4><p>内容分发网络（Content Delivery Network，CDN）是构建在基础IP承载网络之上，面向流媒体、Web及应用的内容传送，具备内容自动化分布及流量集中化调度控制能力的叠加网络。CDN由分布在不同区域的CDN节点组成，通过全局负载均衡的调度机制和内容中心的分发机制实现签约内容源的请求调度和内容缓存。<br>&lt;1&gt; CDN体系架构<br>CDN从逻辑上可分为<code>调度控制层</code>、<code>内容中心层</code>和<code>服务节点层</code>3个层面。<br>&lt;2&gt; CDN工作机制</p>
+<ol>
+<li>CDN请求调度机制：内容路由技术、全局调度机制、区域调度机制、本地调度机制、调度控制策略。</li>
+<li>CDN内容管理机制：内容注入机制、内容删除机制、内容更新机制。</li>
+</ol>
+<h4 id="SDN"><a href="#SDN" class="headerlink" title="SDN"></a>SDN</h4><p>软件定义网络（Software Defined Networking，SDN）是一种新兴的基于软件的网络架构技术，其最大的特点在于实现了控制和转发分离，支持集中化的网络状态控制，实现底层网络设施对上层应用的透明。通过灵活的软件编程能力，使得网络的自动化管理和控制能力获得大幅提升，能够有效地解决当前网络系统所面临的资源规模扩展受限、组网灵活性差、难以快速满足业务需求等问题。<br>&lt;1&gt; SDN具有三大基本特征：</p>
+<ol>
+<li>控制和转发分离：网络的控制实体独立于网终转发和处理实体，进行独立部署。控制和转发的分离带来的好处是控制可以集中化实现审高效的控制，以及控制软件和网络硬件的分别独立优化发布。控制和转发分离是SDN架构区别于传统网络体系架构的重要标志，是网络获得更多可编程能力的架构基础。</li>
+<li>网络业务可编程：这个原则的目的是允许用户在整个业务生命周期中通过与控制器进行信息交换来改变业务的属性，从而满足需求的变化。这个原则的目的是提高业务的敏捷性，用户可以更方便快捷地协助业务、启动业务、改变业务、撤销业务等，从而加快业务部署的进程。</li>
+<li>集中化控制：集中化控制的原则主要追求网络资源的高效利用。集中的控制器对网络资源和状态有更加全面的视野，可以更加有效地调度资源以满足客户的需求。同时控制器也可以对网络资源细节进行抽象，从而简化客户对网络的操作。<br>&lt;2&gt; SDN体系架构：分为应用层、控制层、基础设施层三个层面，以及南北向两种接口。<br>&lt;3&gt; SDN优势：SDN实现了控制功能与数据平面的分离和网络可编程，将网络的智能从硬件转移到软件，简化和整合了控制功能，让网络硬件设备变得更智能、可靠，能够适应互联网爆发式的增长，同时还有助于降低设备购买和运营成本。</li>
+</ol>
 
     </article>
     <!-- license  -->
@@ -521,7 +558,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#交换技术"><span class="toc-number">1.</span> <span class="toc-text">交换技术</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#生成树协议"><span class="toc-number">1.1.</span> <span class="toc-text">生成树协议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#VLAN"><span class="toc-number">1.2.</span> <span class="toc-text">VLAN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多层交换技术"><span class="toc-number">1.3.</span> <span class="toc-text">多层交换技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CDN"><span class="toc-number">1.4.</span> <span class="toc-text">CDN</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SDN"><span class="toc-number">1.5.</span> <span class="toc-text">SDN</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>

@@ -274,7 +274,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">18</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">986</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -398,7 +398,96 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>今天离考试还有<code>16</code>天,今天复习的重点如下：</p>
+        <p>今天离考试还有<code>14</code>天,今天复习的重点如下：</p>
+<h3 id="网络安全（二）"><a href="#网络安全（二）" class="headerlink" title="网络安全（二）"></a>网络安全（二）</h3><h4 id="恶意软件的种类和特征"><a href="#恶意软件的种类和特征" class="headerlink" title="恶意软件的种类和特征"></a>恶意软件的种类和特征</h4><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>病毒</td>
+<td>当执行时，向可执行代码传播自身副本的恶意代码：传播成功时，可执行程序被感染。当被感染代码执行时，病毒也执行</td>
+</tr>
+<tr>
+<td>蠕虫</td>
+<td>可独立执行的计算机程序，并可以向网络中的其他主机传播自身副本</td>
+</tr>
+<tr>
+<td>逻辑炸弹</td>
+<td>入侵者植入软件的程序，逻辑炸弹潜藏到触发条件满足为止，然后该程序激发一个未授权的动作</td>
+</tr>
+<tr>
+<td>特洛伊木马</td>
+<td>貌似有用的计算机程序，但也包含能够规避安全机制的潜藏恶意功能，有时利用系统的合法授权引发特洛伊木马程序</td>
+</tr>
+<tr>
+<td>后门/陷门</td>
+<td>能够绕过安全检查的任意机制；允许对未授权的功能访问</td>
+</tr>
+<tr>
+<td>可移动代码</td>
+<td>能够不变地植入各种不同平台，执行时有相同语义的程序</td>
+</tr>
+<tr>
+<td>漏洞利用</td>
+<td>针对某一个漏洞或者一组漏洞的代码</td>
+</tr>
+<tr>
+<td>下载者</td>
+<td>可以在遭受政击的机器上安装其他条款的程序。通常，下载者是通过电子邮件传播的</td>
+</tr>
+<tr>
+<td>自动路由程序</td>
+<td>用于远程入侵到未被感染的机器中的恶意攻击工具</td>
+</tr>
+<tr>
+<td>病毒生成工具包</td>
+<td>一组用于自动生成新病毒的工具</td>
+</tr>
+<tr>
+<td>垃圾邮件程序</td>
+<td>用于发送大量不必要的电子邮件</td>
+</tr>
+<tr>
+<td>洪流</td>
+<td>用于占用大量网络资源对网络计算机系统进行攻击从而实现Dos攻击</td>
+</tr>
+<tr>
+<td>键盘日志</td>
+<td>捕获被感染系统中的用户按键</td>
+</tr>
+<tr>
+<td>Rootkit</td>
+<td>当攻击者进入计算机系统并获得低层通路之后使用的攻击工具</td>
+</tr>
+<tr>
+<td>僵尸</td>
+<td>活跃在被感染的机器上并向其他机器发起攻击的程序</td>
+</tr>
+<tr>
+<td>间谍软件</td>
+<td>从一个计算机上收集信息并发送到其他系统的软件</td>
+</tr>
+<tr>
+<td>广告软件</td>
+<td>整合到软件中的广告。结果是弹出广告或者指向购物网站</td>
+</tr>
+</tbody></table>
+<h4 id="入侵检测的概念和模型"><a href="#入侵检测的概念和模型" class="headerlink" title="入侵检测的概念和模型"></a>入侵检测的概念和模型</h4><p>&lt;1&gt; 入侵检测的概念：入侵检测技术是为保证计算机系统的安全，而设计与配置的一种能够及时发现并报告系统中未授权或异常现象的技术，用于检测计算机网络中违反安全策略的行为。<br>&lt;2&gt; 入侵检测系统类型：</p>
+<ol>
+<li>基于网络的入侵检测</li>
+<li>基于主机的入侵检测</li>
+<li>混合入侵检测</li>
+<li>文件完整性检查</li>
+</ol>
+<p>&lt;3&gt; 审计记录。入侵检测的一个基本工具就是审计记录。一般有以下两种审计记录：</p>
+<ol>
+<li>原始审计记录（不需要额外的收集软件，缺点是包含的信息不便于直接应用）</li>
+<li>面向检测的审计记录（采用第三方的审计记录收集机制，只生成入侵检测系统所需信息的审计记录；缺点是需要额外的处理开销，同时运行两种账户统计工具包）</li>
+</ol>
+<h4 id="防火墙的概念和实施"><a href="#防火墙的概念和实施" class="headerlink" title="防火墙的概念和实施"></a>防火墙的概念和实施</h4><p>&lt;1&gt; 防火墙的概念：网络防火墙是指在两个网络之间加强访问控制的一套装置，即构造在一个可信网络（一般指内部网）和不可信网络（一般指外部网）之间的保护装置，强制所有的访问和连接都必须经过这道保护层，并在此进行连接和安全检查，只有合法的流量才能通过此保护层。<br>&lt;2&gt; 防火墙的类型：包过滤型、代理服务器型、电路层网关、混合型防火墙、应用层网关和自适应代理技术。</p>
 
     </article>
     <!-- license  -->
@@ -526,7 +615,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#网络安全（二）"><span class="toc-number">1.</span> <span class="toc-text">网络安全（二）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#恶意软件的种类和特征"><span class="toc-number">1.1.</span> <span class="toc-text">恶意软件的种类和特征</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#入侵检测的概念和模型"><span class="toc-number">1.2.</span> <span class="toc-text">入侵检测的概念和模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#防火墙的概念和实施"><span class="toc-number">1.3.</span> <span class="toc-text">防火墙的概念和实施</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>

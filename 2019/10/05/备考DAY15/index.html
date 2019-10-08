@@ -274,7 +274,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">1.3k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">2k</span>阅读时长: <span class="post-count reading-time">7 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -399,7 +399,7 @@ height:50vh;
             <main class="main post-page">
     <article class="article-entry">
         <p>今天离考试还有<code>15</code>天,今天复习的重点如下：</p>
-<h3 id="网络安全"><a href="#网络安全" class="headerlink" title="网络安全"></a>网络安全</h3><h4 id="网络安全模型"><a href="#网络安全模型" class="headerlink" title="网络安全模型"></a>网络安全模型</h4><p><img src="https://i.loli.net/2019/10/07/i7oEbBMkGZpF3Pe.jpg" alt="网络安全模型"><br>　　消息通过互联网络从一方传输到另一方，这两方都是事物的主体，通过在互联网络上定义一条从信息源到信息目的地之间的路由，以及两个信息主体之间使用的某种通信协议建立逻辑信息通道，进行消息交换。<br>　　所有用于提供安全性的安全要素主要包含以下两个部分：</p>
+<h3 id="网络安全（一）"><a href="#网络安全（一）" class="headerlink" title="网络安全（一）"></a>网络安全（一）</h3><h4 id="网络安全模型"><a href="#网络安全模型" class="headerlink" title="网络安全模型"></a>网络安全模型</h4><p><img src="https://i.loli.net/2019/10/07/i7oEbBMkGZpF3Pe.jpg" alt="网络安全模型"><br>　　消息通过互联网络从一方传输到另一方，这两方都是事物的主体，通过在互联网络上定义一条从信息源到信息目的地之间的路由，以及两个信息主体之间使用的某种通信协议建立逻辑信息通道，进行消息交换。<br>　　所有用于提供安全性的安全要素主要包含以下两个部分：</p>
 <ol>
 <li>对要发送的信息进行与安全相关的转换。如消息加密；在消息内容上添加用来验证发送者的身份的附加码等。</li>
 <li>两个主体共享一些不希望被攻击者所知的秘密信息,包括在信息交换中使用的加密密钥（在传输之前用于加密消息而在接收之后用于恢复消息）。</li>
@@ -420,8 +420,9 @@ height:50vh;
 <li>加密算法：加密算法对明文进行各种形式的变换。</li>
 <li>公钥和私钥：算法的输入，这对密钥如果一个密钥用于加密，则另一个密钥就用于解密。加密算法所执行的具体变换取决于输入端提供的公钥或私钥。</li>
 <li>密文：算法的输出，取决于明文和密钥。对于给定的消息，两个不同的密钥将产生两个不同的密文。</li>
-<li>解密算法：该算法接收密文和匹配的密钥，生成原始的明文。<br>　　顾名思义，密钥对中的公钥是公开供其他人使用的，私钥只有自己知道。通常的公钥密码算法根据一个密钥进行加密，根据另一个不同但相关的密钥进行解密。<br>　　目前流行的公钥算法是<code>RSA</code>，它既可以用于加密，可可以用于数字签名。由于速度慢，一般不直接用于数据加密，而用于对称密码算法密钥的传递和数字签名。<br><img src="https://i.loli.net/2019/10/07/o9GDn6P5Utjxg4L.jpg" alt="公钥密码——加密"></li>
+<li>解密算法：该算法接收密文和匹配的密钥，生成原始的明文。</li>
 </ol>
+<p>　　顾名思义，密钥对中的公钥是公开供其他人使用的，私钥只有自己知道。通常的公钥密码算法根据一个密钥进行加密，根据另一个不同但相关的密钥进行解密。<br>　　目前流行的公钥算法是<code>RSA</code>，它既可以用于加密，可可以用于数字签名。由于速度慢，一般不直接用于数据加密，而用于对称密码算法密钥的传递和数字签名。<br><img src="https://i.loli.net/2019/10/07/o9GDn6P5Utjxg4L.jpg" alt="公钥密码——加密"></p>
 <h4 id="密钥分配和用户认证"><a href="#密钥分配和用户认证" class="headerlink" title="密钥分配和用户认证"></a>密钥分配和用户认证</h4><p>&lt;1&gt; 基于对称加密的密钥分配<br>    对于对称加密，加密双方必须共享同一密钥，而且必须保护密钥不被他人读取。<br>&lt;2&gt; 基于非对称加密的密钥分配<br>    公钥加密的一个重要作用就是处理密钥的分发问题，存在两个不同的方面：公钥的分发和使用公钥加密分发私钥。</p>
 <h4 id="网络访问控制和云安全"><a href="#网络访问控制和云安全" class="headerlink" title="网络访问控制和云安全"></a>网络访问控制和云安全</h4><p>　　网络访问控制（NAC）是对网络进行管理访问的一个概括性术语。NAC对登录到网络的用户进行认证，同时决定该用户可以访问哪些数据，执行哪些操作。NAC同时可以检查用户的计算机或者移动设备（终端）的安全程度。<br>&lt;1&gt; 网络访问控制</p>
 <ol>
@@ -429,7 +430,56 @@ height:50vh;
 <li>网络访问强制措施：IEEE 802.1x、VLAN、防火墙、DHCP。</li>
 </ol>
 <p>&lt;2&gt;可扩展认证协议（EAP）<br>&lt;3&gt;云安全（按使用量付费的模式）</p>
-<h4 id="WEB安全"><a href="#WEB安全" class="headerlink" title="WEB安全"></a>WEB安全</h4><p>未完待续</p>
+<h4 id="Web安全"><a href="#Web安全" class="headerlink" title="Web安全"></a>Web安全</h4><ol>
+<li><p>Web安全需求<br>（1）互联网是双向的。电子发布系统使得Web服务器容易受到互联网的攻击。<br>（2）Web日益成为商业合作和产品信息的出口及处理商务的平台。如果web服务器遭到破坏，则可能会造成企业信誉的损害和经济损失。<br>（3）Web底层软件极其复杂。这种复杂的软件中可能会隐藏很多潜在的安全缺陷。在Web短暂的历史中，各种新的和升级的系统容易受到各种各样的安全攻击。<br>（4）Web服务器可以作为公司或机构的整个计算机系统的核心，这种情况下，一旦Web服务器遭到破坏，攻击者就不仅可以访问Web服务，而且可以获得与之相连的整个本地站点服务器的数据和系统的访问权限。<br>（5）基于Web的各种服务的客户一般都是临时性的或未经训练（在安全问题方面）的用户，对存在的安全缺乏警觉感，也没有对这些安全风险有效防范的工具和知识。</p>
+</li>
+<li><p>Web安全威胁<br>被动攻击包括在浏览器和服务器之间通信时，窃听和获取Web站点上受限访问信息的访问权。主动攻击包括用户假冒、在客户和服务器之间的传输过程中替换消息和更改Web站点上的信息等。</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>威胁</th>
+<th>后果</th>
+<th>对策</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>完整性</td>
+<td>用户数据修改<br>特洛伊木马浏览器<br>内存修改<br>更改传输中的消息</td>
+<td>丢失消息<br>设备受损<br>易受其他威胁</td>
+<td>密码校验和</td>
+</tr>
+<tr>
+<td>机密性</td>
+<td>网上窃听<br>窃取服务器信息<br>窃取客户端信息<br>窃取网络配置信息<br>窃取客户与服务器通话信息</td>
+<td>信息丢失<br>秘密丢失</td>
+<td>加密<br>Web委托代理</td>
+</tr>
+<tr>
+<td>拒绝服务</td>
+<td>破坏用户线程<br>用假消息使机器溢出<br>填满硬盘或内存<br>用DNS攻击孤立机器</td>
+<td>中断<br>干扰<br>阻止用户完成任务</td>
+<td>难以防止</td>
+</tr>
+<tr>
+<td>认证</td>
+<td>假冒合法用户<br>伪造数据</td>
+<td>用户错误<br>相信虚假信息</td>
+<td>密码技术</td>
+</tr>
+</tbody></table>
+<ol start="3">
+<li><p>Web安全解决方案<br>Web安全的一种解决方案是使用IPSec；另一种解决方案是仅在TCP上实现安全，最典型的例子是SSL和被称为第二代互联网标准的传输层安全。</p>
+</li>
+<li><p>安全套接字层（SSL）<br>使用TCP提供一种可靠的端对端的安全服务</p>
+</li>
+<li><p>HTTPS<br>HTTPS是指用HTTP和SSL的结合来实现网络浏览器和服务器之间的安全通信。默认端口为443（普通HTTP使用80端口），使用HTTPS时，通信过程中以下元素被加密：<code>要求文件的URL</code>、<code>文件的内容</code>、<code>浏览器表单的内容</code>、<code>浏览器和服务器间发送的Cookie</code>、<code>HTTP报头的内容</code>。</p>
+</li>
+<li><p>SSH<br>SSH由3个通信协议组成：传输层协议、用户身份验证协议、连接协议。运行在<strong>TCP</strong>上。</p>
+</li>
+</ol>
 
     </article>
     <!-- license  -->
@@ -557,7 +607,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#网络安全"><span class="toc-number">1.</span> <span class="toc-text">网络安全</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#网络安全模型"><span class="toc-number">1.1.</span> <span class="toc-text">网络安全模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#对称加密原理和消息机密性"><span class="toc-number">1.2.</span> <span class="toc-text">对称加密原理和消息机密性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#公钥密码原理和消息认证"><span class="toc-number">1.3.</span> <span class="toc-text">公钥密码原理和消息认证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#密钥分配和用户认证"><span class="toc-number">1.4.</span> <span class="toc-text">密钥分配和用户认证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#网络访问控制和云安全"><span class="toc-number">1.5.</span> <span class="toc-text">网络访问控制和云安全</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#WEB安全"><span class="toc-number">1.6.</span> <span class="toc-text">WEB安全</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#网络安全（一）"><span class="toc-number">1.</span> <span class="toc-text">网络安全（一）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#网络安全模型"><span class="toc-number">1.1.</span> <span class="toc-text">网络安全模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#对称加密原理和消息机密性"><span class="toc-number">1.2.</span> <span class="toc-text">对称加密原理和消息机密性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#公钥密码原理和消息认证"><span class="toc-number">1.3.</span> <span class="toc-text">公钥密码原理和消息认证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#密钥分配和用户认证"><span class="toc-number">1.4.</span> <span class="toc-text">密钥分配和用户认证</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#网络访问控制和云安全"><span class="toc-number">1.5.</span> <span class="toc-text">网络访问控制和云安全</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Web安全"><span class="toc-number">1.6.</span> <span class="toc-text">Web安全</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
