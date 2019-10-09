@@ -274,7 +274,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">488</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">949</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -407,16 +407,14 @@ height:50vh;
 </ol>
 <p>&lt;2&gt; 网关<br><strong>网关用于连接网络层之上执行不同协议的子网，组成异构型的互联网。</strong><br>网关是互连网络中操作在OSI传输层之上的设施，可以是硬件，也可以是一台主机。更是一种概念或功能的抽象。</p>
 <h4 id="Internet协议"><a href="#Internet协议" class="headerlink" title="Internet协议"></a>Internet协议</h4><p>主要的Internet协议包括TCP和IP，所以Internet协议称为TCP/IP协议簇，这些协议划分为4个层次，与OSI的对应关系如图所示：<br><img src="https://i.loli.net/2019/10/09/EijYZ4Rvr2FpdOw.jpg" alt="TCP/IP和OSI/RM模型的对比"></p>
-<p><strong>IP（V4)协议</strong></p>
-<ol>
-<li>IP协议结构:</li>
-</ol>
+<p><strong>IP（v4)协议</strong><br>&lt;1&gt; IP协议结构:</p>
 <p><img src="https://i.loli.net/2019/10/09/ZrvKnpQVdPEjG2k.jpg" alt="IP协议结构"></p>
 <style>
 table th:first-of-type {
     width: 220px;
 }
 </style>
+
 <table>
 <thead>
 <tr>
@@ -425,13 +423,57 @@ table th:first-of-type {
 </tr>
 </thead>
 </table>
-<ol start="2">
-<li>IP地址<br>在IP网络中，网络上的每个设备使用IP地址进行标识，共32位（4个字节）。</li>
-</ol>
+<p>&lt;2&gt; IP地址<br>在IP网络中，网络上的每个设备使用IP地址进行标识，共32位（4个字节）。</p>
 <p><img src="https://i.loli.net/2019/10/09/rOFhVPmlXGUK2oa.png" alt="IP地址的分类"></p>
 <p><strong>IP地址被分成A、B、C、D、E 5种类型。</strong><br>A类地址：从1.0.0.0到127.255.255.255<br>B类地址：从128.0.0.0到191.255.255.255<br>C类地址：从192.0.0.0到223.255.255.255<br>D类地址：从224.0.0.0到239.255.255.255（广播地址，不能在Internet上使用）<br>E类地址：从240.0.0.0到255.255.255.255（保留地址，不能在Internet上使用）</p>
 <p>其中，私有IP地址段：<br>A类地址：10.0.0.0到10.255.255.255<br>B类地址：172.16.0.0到172.31.255.255<br>C类地址：192.168.0.0到192.168.255.255</p>
 <p><strong>点分十进制记法</strong><br><img src="https://i.loli.net/2019/10/09/Zvb7YnPgNloqGLF.png" alt="点分十进制记法"></p>
+<p><strong>IP地址的使用范围</strong></p>
+<style>
+table th:first-of-type {
+    width: 70px;
+}
+table th:nth-child(2) {
+    width: 120px;
+}
+</style>
+<table>
+<thead>
+<tr>
+<th align="center">网络类别</th>
+<th align="center">最大网络数</th>
+<th align="center">第一个可用的网络号</th>
+<th align="center">最后一个可用的网络号</th>
+<th align="center">每个网络中最大的主机数(2<sup>n</sup>–2,n为主机位）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">A</td>
+<td align="center">126(2<sup>7</sup>–2)</td>
+<td align="center">1</td>
+<td align="center">126</td>
+<td align="center">16,777,214</td>
+</tr>
+<tr>
+<td align="center">B</td>
+<td align="center">16,382(2<sup>14</sup>-2)</td>
+<td align="center">128.1</td>
+<td align="center">191.255</td>
+<td align="center">65,534</td>
+</tr>
+<tr>
+<td align="center">C</td>
+<td align="center">2,097,150(2<sup>21</sup>-2)</td>
+<td align="center">192.0.1</td>
+<td align="center">223.255.255</td>
+<td align="center">254</td>
+</tr>
+</tbody></table>
+<p><em>PS:<br>　　关于上表中B类和C类地址的“最大网络数”，不同的教程有不同的计算方法，谢希仁老师的《计算机网络》第五版计算B类和C类最大网络数时只减掉了全0的这一个地址，如B类最大网络数是16,383(2<sup>14</sup>-1)，没有减去全1的广播地址，因本次为备考，上表的数据取自通信工程师互联网技术考试用书上的内容。<br>　　至于哪个计算方法正确有待商榷。以下为摘自《计算机网络》第五版中关于最大网络数的计算的相关内容：</em><br><img src="https://i.loli.net/2019/10/09/vdqpPSGANjsJFeI.png" alt="《计算机网络》第五版关于最大网络数的计算"></p>
+<p>&lt;3&gt; 子网<br>通过把大的网络划分成小的子网，管理网络。<br>IP 地址的各字段和子网掩码（下图掩码为24位）：<br><img src="https://i.loli.net/2019/10/09/AafdzSRJVKbxhHi.png" alt="IP 地址的各字段和子网掩码 ">通过IP地址和子网掩码计算网络地址时，将IP地址的第3字节换算成二进制，与子网掩码进行布尔与计算（AND，上下都为1时得1，否则为0），得出子网号。</p>
+<p><strong>ARP和RARP协议</strong><br>ARP：把IP地址转换为物理地址，这样消除了应用程序需要知道物理地址的必要性。<br>RARP：RARP以与ARP相反的方式工作，发送物理地址返回IP地址。</p>
+<h4 id="IPv6"><a href="#IPv6" class="headerlink" title="IPv6"></a>IPv6</h4><p>&lt;1&gt; IPv6协议格式<br>IPv6数据报头发生根本性改变，格式如下：<br><img src="https://i.loli.net/2019/10/09/15ZzexvRlJM2hG6.png" alt></p>
+<p>Todo:<br>报文分片</p>
 
     </article>
     <!-- license  -->
@@ -554,7 +596,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#互联网-集中复习"><span class="toc-number">1.</span> <span class="toc-text">互联网 集中复习</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#网络互联设备"><span class="toc-number">1.1.</span> <span class="toc-text">网络互联设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Internet协议"><span class="toc-number">1.2.</span> <span class="toc-text">Internet协议</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#互联网-集中复习"><span class="toc-number">1.</span> <span class="toc-text">互联网 集中复习</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#网络互联设备"><span class="toc-number">1.1.</span> <span class="toc-text">网络互联设备</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Internet协议"><span class="toc-number">1.2.</span> <span class="toc-text">Internet协议</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#IPv6"><span class="toc-number">1.3.</span> <span class="toc-text">IPv6</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
