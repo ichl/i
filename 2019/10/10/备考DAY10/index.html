@@ -285,7 +285,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">18</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">922</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -410,8 +410,51 @@ height:50vh;
             <main class="main post-page">
     <article class="article-entry">
         <p>今天离考试还有<code>10</code>天,今天复习的重点如下：</p>
-<p>### </p>
-<p>#### </p>
+<h3 id="计算机应用基础"><a href="#计算机应用基础" class="headerlink" title="计算机应用基础"></a>计算机应用基础</h3><h4 id="计算机系统的组成"><a href="#计算机系统的组成" class="headerlink" title="计算机系统的组成"></a>计算机系统的组成</h4><p>&lt;1&gt; 计算机硬件</p>
+<ol>
+<li>运算器</li>
+<li>控制器</li>
+<li>存储器</li>
+<li>输入设备</li>
+<li>输出设备</li>
+</ol>
+<p>&lt;2&gt; 计算机软件</p>
+<ol>
+<li>系统软件</li>
+<li>应用软件</li>
+</ol>
+<h4 id="计算机中数据的表示"><a href="#计算机中数据的表示" class="headerlink" title="计算机中数据的表示"></a>计算机中数据的表示</h4><p>&lt;1&gt; 二进制数据<br>数制：逢2进1<br>数据存储单位：存储信息的最小单位是二进制的一位（bit），8位二进制数为一个字节（byte），用B表示。一个字节对应计算机中的一个存储单元。<br>&lt;2&gt; 计算机中表示的数据<br>在计算机内部，文字、声音、图像等各种信息都必须经过数字化编码后，才能被加工、处理、存储等操作。</p>
+<ol>
+<li>英文字符编码：最常用的英文字符编码是<code>ASCII</code>码。</li>
+<li>汉字编码：汉字输入-&gt;输入码-&gt;国标区位码-&gt;机内码-&gt;字形码-&gt;汉字输出<br>在输入汉字时，操作者在键盘上输入输入码，通过输入码找到汉字的国际区位码，再计算出汉字的机内码后保存；当显示或打印汉字时，则首先从指定地址取出汉字的内码，根据内码从字模库中取出汉字的字形码，再通过一定的软件转换，将字形输出到屏幕或打印机上。</li>
+</ol>
+<h4 id="数据库系统"><a href="#数据库系统" class="headerlink" title="数据库系统"></a>数据库系统</h4><p>&lt;1&gt; 基本概念</p>
+<ol>
+<li>信息和数据<br><code>信息</code>是现实世界在人脑中的抽象反映，是通过人的感官感知出来并经过人脑的加工而形成的反映现实世界中事物的概念。<br><code>数据（Data）</code>是数据库中存储的基本对象，是描述事物的符号记录。数据有多种表现形式，包括数字、文字、图像、声音等。为了方便计算机存储和处理日常工作、生活中的事物，通常抽象出事物的特征并将其组成一个记录来描述。</li>
+<li>数据处理和数据管理<br>数据处理（又称为信息处理），是指从某些已知的表示某些信息的数据出发，推导整理出一些新的数据，从而又表示出一些新的信息的过程。它涉及数据的收集、管理、生成新信息输出的全过程。<br>数据管理是指数据的收集、整理、组织、存储、维护、检索及传送等操作处理过程。</li>
+<li>数据库和数据库管理系统<br>数据库（DB）是长期存储在计算机存储设备上的、有组织的、可共享的数据集合。<br>数据库管理系统（DBMS）是位于用户与操作系统之间的一层数据管理软件。</li>
+<li>数据库系统<br>数据库系统（DBS）是指在计算机系统中引入数据库后的系统。一般由数据库、数据库用户、计算机软件系统、计算机硬件系统等组成。</li>
+</ol>
+<p>&lt;2&gt; 数据库系统结构</p>
+<ol>
+<li>3级模式结构：概念模式（也简称为模式）、外模式、内模式。</li>
+<li>体系结构：单用户、主从式结构、分布式结构、客户/服务器结构。</li>
+</ol>
+<h4 id="多媒体系统的组成"><a href="#多媒体系统的组成" class="headerlink" title="多媒体系统的组成"></a>多媒体系统的组成</h4><p>&lt;1&gt; 多媒体硬件系统</p>
+<ol>
+<li>多媒体主机</li>
+<li>多媒体输入设备</li>
+<li>多媒体输出设备</li>
+<li>多媒体接口卡</li>
+<li>多媒体操作控制设备</li>
+</ol>
+<p>&lt;2&gt; 多媒体软件系统</p>
+<ol>
+<li>支持多媒体的操作系统</li>
+<li>多媒体数据库管理系统</li>
+<li>多媒体压缩与解压缩软件</li>
+<li>多媒体通信软件</li>
+</ol>
 
     </article>
     <!-- license  -->
@@ -534,7 +577,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#计算机应用基础"><span class="toc-number">1.</span> <span class="toc-text">计算机应用基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#计算机系统的组成"><span class="toc-number">1.1.</span> <span class="toc-text">计算机系统的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#计算机中数据的表示"><span class="toc-number">1.2.</span> <span class="toc-text">计算机中数据的表示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#数据库系统"><span class="toc-number">1.3.</span> <span class="toc-text">数据库系统</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多媒体系统的组成"><span class="toc-number">1.4.</span> <span class="toc-text">多媒体系统的组成</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
