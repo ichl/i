@@ -22,7 +22,7 @@
     <meta name="description" content="My personal blog site, powered by Hexo and github.io.">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>备战通信工程师考试：DAY20 · changliang.io</title>
+    <title>备战通信工程师考试：DAY9 · changliang.io</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -228,7 +228,7 @@
                 <a href="/" >changliang.io</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">备战通信工程师考试：DAY20</a>
+                <a href="#" class="post-name">备战通信工程师考试：DAY9</a>
             </div>
     </div>
     
@@ -258,7 +258,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            备战通信工程师考试：DAY20
+            备战通信工程师考试：DAY9
             <!-- 404 -->
             
         </h1>
@@ -285,12 +285,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">2.4k</span>阅读时长: <span class="post-count reading-time">8 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1.1k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/09/30</span>
+                    <span class="post-intro-time">2019/10/11</span>
                     
                     <span class="shareWrapper">
                         <span class="iconfont-archer shareIcon">&#xe71d;</span>
@@ -409,50 +409,87 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>今天离考试还有<code>20</code>天,今天复习的重点如下：</p>
-<h3 id="第一部分：网络层次结构"><a href="#第一部分：网络层次结构" class="headerlink" title="第一部分：网络层次结构"></a>第一部分：网络层次结构</h3><h4 id="OSI-七层模型"><a href="#OSI-七层模型" class="headerlink" title="OSI 七层模型"></a>OSI 七层模型</h4><p><strong>相关定义</strong><br>&lt;1&gt; 开放系统互连参考模型（Open System Interconnect，OSI）是国际标准化组织（ISO）和国际电报电话咨询委员会（CCITT）联合制定的开放系统互连参考模型，为开放式互连信息系统提供了一种功能结构的框架。它从上到下分别是：</p>
-<blockquote>
-<p>7 应用层<br>6 表示层<br>5 会话层<br>4 传输层<br>3 网络层<br>2 数据链路层<br>1 物理层</p>
-</blockquote>
-<p>其中高层（即7、6、5、4层）定义了应用程序的功能，下面3层（即3、2、1层）主要面向通过网络的端到端的数据流。<br>&lt;2&gt; 网络协议为计算机网络中进行数据交换而建立的规则、标准或约定的集合。<br>&lt;3&gt; 计算机网络被划分为资源子网和通信子网，在完成主机间信息交换递程中，使用了通信子网内部数据交换设备的哪几层协议？<br>    <strong>[答案：网络层、数据链路层、物理层。]<br>    通信子网（Communication Subnet，或简称子网）是指网络中实现网络通信功能的设备及其软件的集合。通信设备、网络通信协议、通信控制软件等属于通信子网，是网络的内层，负责信息的传输，主要为用户提供数据的传输、转接、加工、变换等。通信子网的任务是在端结点之间传送报文，主要由转接点和通信链路组成。通信子网，在OSI体系中的位置是下三层。</strong><br>&lt;4&gt; 网络设备和所在层次的对应关系</p>
+        <p>今天离考试还有<code>9</code>天,今天复习的重点如下：</p>
+<h3 id="通信系统"><a href="#通信系统" class="headerlink" title="通信系统"></a>通信系统</h3><h4 id="通信系统的组成"><a href="#通信系统的组成" class="headerlink" title="通信系统的组成"></a>通信系统的组成</h4><p>通信的目的是传输信息。通信系统的组成可以用系统模型来概括：</p>
 <ol>
-<li>一层（物理层）：网卡、集线器、中继器</li>
-<li>二层（数据链路层）：网桥、交换机</li>
-<li>三层（网络层）：路由器、网关（网络层及其以上）</li>
+<li>信源</li>
+<li>发送设备</li>
+<li>信道</li>
+<li>接收设备</li>
+<li>信宿</li>
 </ol>
-<p><strong>网络层次示意图</strong><br><img src="https://i.loli.net/2019/10/01/defol2YT9GcXz1r.gif" alt="OSI七层模型.gif"></p>
-<h4 id="TCP-IP四层模型"><a href="#TCP-IP四层模型" class="headerlink" title="TCP/IP四层模型"></a>TCP/IP四层模型</h4><p><strong>相关定义</strong><br>&lt;1&gt; TCP/IP又称为网络通信协议，是国际互联网的基础。<br>&lt;2&gt; TCP/IP是一组协议的集合，包括上百个各种功能的协议，如TCP、IP、UDP、ICMP、RIP、Telnet、FTP、SMTP、ARP及TFTP等，其中TCP、IP协议是保证数据完整传输的两个基本的重要协议。<br>&lt;3&gt; TCP/IP并不完全符合OSI的7层参考模型，采用了4层结构，从上到下依次为：</p>
-<blockquote>
-<p>4 应用层 （对应OSI模型 应用层、表示层、会话层）<br>3 传输层 （对应OSI模型 传输层）<br>2 网络层 （对应OSI模型 网络层）<br>1 网络接口层 （对应OSI模型 链路层、物理层）</p>
-</blockquote>
-<p>&lt;4&gt; TCP/IP各层常用协议：</p>
-<blockquote>
-<p>4 应用层 （Telnet、FTP、SMTP、SNMP、DNS、HTTP、HTTPS、NTP）<br>3 传输层 （TCP、UDP）<br>2 网络层 （X.25分组、IPX/SPX、IP、ICMP、IGMP、RIP、OSPF、BGP）<br>1 网络接口层 （PPP、ARP、RARP以及物理层的RS232C、V.35、X.21等）</p>
-</blockquote>
-<h4 id="ATM四层模型"><a href="#ATM四层模型" class="headerlink" title="ATM四层模型"></a>ATM四层模型</h4><p><strong>相关定义</strong><br>&lt;1&gt; ATM协议参考模型借鉴了ISO的OSI参考模型，以<code>高层</code>、<code>ATM适配层</code>、<code>ATM层</code>、<code>物理层</code>四层取代OSI的七层结构，但从功能上来说，仍然完整实现了系统所需的各种功能。所以，在物理层和ATM适配层分别用两个子层描述和区分层内功能。物理层分为与媒体有关的物理媒体子层PMD和传输汇聚子层TC。ATM适配层又划分为两个子层，即汇聚子层CS和拆装子层SAR。<br>ATM四层结构如下：</p>
-<blockquote>
-<p>4 高层<br>3 ATM适配层<br>2 ATM层<br>1 物理层</p>
-</blockquote>
-<p>&lt;2&gt; ATM是一种<strong>面向分组</strong>的技术，其分组称为<strong>信元</strong>。每个ATM信元包含<code>53</code>字节，其中<code>5</code>字节的信头，<code>48</code>字节的净荷。<br>&lt;3&gt; ATM使用统计时分复用技术将用户的数据划分为一个个数据单元，不同用户的数据单元仍按照时分方式来共享信道。<br>&lt;4&gt; ATM的主要接口有：</p>
-<ol>
-<li>用户网络接口（UNI），它是用户设备与网络之间的接口，直接面向用户，UNI 接口定义了物理传输线路的接口标准（支持多种不同速率的信号接入，从最低的E1到STM-1、到STM-4，即2Mbps、155.520Mbps、622.080 Mbps）。</li>
-<li>网络网络接口（NNI），NNI可理解为网络节点接口或网络/网络之间的接口，一般为两个交换机之间的接口（支持多种不同速率的干线信号接入，从最低的STM-1、STM-4到STM-16，即155.520Mbps、622.080Mbps、2.5Gbps）。</li>
-<li>宽带ISDN网间接口（B-ICI），B-ICI定义为两个公用ATM网之间的接口，为分别属于两个运营者的UNI接口提供了连接，它的定义基于NNI接口。</li>
-<li>数据交换接口（DXI），DXI定义在数字终端设备DTE和数字连接设备DCE之间，DTE通过DXI与DCE相连，再通过ATM UNI接口接入ATM网中，相当于终端适配器。</li>
-</ol>
-<h3 id="第二部分：交换与控制"><a href="#第二部分：交换与控制" class="headerlink" title="第二部分：交换与控制"></a>第二部分：交换与控制</h3><h4 id="定义及优缺点"><a href="#定义及优缺点" class="headerlink" title="定义及优缺点"></a>定义及优缺点</h4><p>数据通信网采用的交换方式主要有<em>电路交换</em>方或和<em>分组交换</em>方式。<br>&lt;1&gt; 电路交换<br><strong>定义：</strong>在通信之前要在通信双方之间建立一条被双方独占的物理通路（有通信双方之间的交换设备和链路逐段连接而成），因而其有以下优缺点。<br><strong>优点：</strong><br>①由于通信线路为通信双方用户专用，数据直达，所以传输数据的时延非常小。<br>②通信双方之间的物理通路一旦建立，双方可以随时通信，实时性强。<br>③双方通信时按发送顺序传送数据，不存在失序问题。<br>④<strong>电路交换既适用于传输模拟信号，也适用于传输数字信号</strong>。<br>⑤电路交换的交换设备及控制均较简单。<br><strong>缺点：</strong><br>①电路交换的平均连接建立时间对计算机通信来说较长。<br>②电路交换建立连接后，物理通路被通信双方独占，即使通信线路空闲，也不能供其他用户使用，因而信道利用率低。<br>③电路交换时，数据直达，不同类型，不同规格，不同速率的终端很难相互进行通信，也难以在通信过程中进行差错控制。<br>&lt;2&gt; 分组交换<br><strong>定义：</strong>它采用存储转发方式，将一个长报文分割为若干个较短的分组，然后把这些分组（携带源地址，目的地址和编号信息）逐个发送出去。因此分组交换有以下优缺点。<br><strong>优点：</strong><br>①分组交换不需要为通信双方预先建立一条专用的通信线路，不存在连接建立时延，用户可随时发送分组。<br>②由于采用存储转发方式，加之交换节点具有路径选择，当某条传输线路故障时可选择其他传输线路，提高了传输的可靠性。<br>③通信双方不是固定地占有一条通信线路，而是在不同的时间段占有这条物理通路，因而大大提高了通信线路的利用率。<br>④加速了数据在网络中的传输。因为分组是逐个传输，可以使后一个分组的存储操作与前一个分组的转发操作并行，这种流水线式传输方式减少了传输时间。<br>⑤分组长度固定，相应的缓冲区的大小也固定，所以简化了交换结点中存储器的管理。<br>⑥分组较短，出错概率减少，每次重发的数据量也减少，不仅提高了可靠性，也减少了时延。<br><strong>缺点：</strong><br>①由于数据进入交换节点后要历经存储转发这一过程，从而引起转发时延（包括接受分组，检验正确性，排队，发送时间等），而且网络的通信量越大造成的时延就越大，实时性较差。<br>②<strong>分组交换只适用于数字信号</strong>。<br>③分组交换可能出现失序，丢失或重复分组，分组到达目的节点时，需要对分组按编号进行排序等工作，增加了工作量。<br><strong>&lt;3&gt; 总结<br>若传输的数据量很大，而且传送时间远大于呼叫时间，则采用电路交换较为合适；当端到端的通路有很多段的链路组成时，采用分组交换较为合适。从提高整个网络的信道利用率上看，分组交换优于电路交换。</strong></p>
-<h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h4><p>&lt;1&gt; 数字数据网（Digital Data Network，DDN）采用<strong>电路交换</strong>；<br>&lt;2&gt; ATM是以信元为基础的一种<strong>分组交换</strong>和复用技术，ATM网络是面向连接的；<br>&lt;3&gt; X.25 =&gt; 帧中继都属于<strong>分组交换</strong>，都采用面向连接的VC虚电路。</p>
-<h3 id="TODOLIST"><a href="#TODOLIST" class="headerlink" title="TODOLIST"></a>TODOLIST</h3><ol>
-<li><del>生成树协议等相关协议？</del>(<a href="http://changliang.io/2019/10/07/备考DAY13/">DAY13</a>)</li>
-<li><del>VLAN的相关概念，广播帧隔离？</del>(<a href="http://changliang.io/2019/10/07/备考DAY13/">DAY13</a>)</li>
-<li><del>IP报文、分片。</del>(<a href="http://changliang.io/2019/10/09/备考DAY11/">DAY11</a>)</li>
-<li><del>子网划分、掩码、IP地址数。</del>(<a href="http://changliang.io/2019/10/09/备考DAY11/">DAY11</a>)</li>
-<li><del>ARP、DNS、ICMP等相关概念。</del>(<a href="http://changliang.io/2019/10/09/备考DAY11/">DAY11</a>)</li>
-<li><del>IPv4、IPv6的相关概念及特点。</del>(<a href="http://changliang.io/2019/10/09/备考DAY11/">DAY11</a>)</li>
-<li><del>数据存储，RAID..NAS、DAS、SAN..</del>(<a href="http://changliang.io/2019/10/02/备考DAY18/">DAY18</a>)</li>
-<li><del>操作系统，Windows、Linux 相关命令。</del>(<a href="http://changliang.io/2019/10/01/备考DAY19/">DAY19</a>)</li>
-</ol>
+<h4 id="信道容量"><a href="#信道容量" class="headerlink" title="信道容量"></a>信道容量</h4><p>在有干扰的信道中，由于信道的带宽限制和噪声的存在，信道传输信息的最大能力是有限的。信道容量是指信道传输信息的最大极限速率。</p>
+<p><strong>香农公式：</strong></p>
+<img src="https://inews.gtimg.com/newsapp_bt/0/7452579772/1000" alt="香农公式" style="zoom:50%;">
 
+<p>其中，N为白噪声平均功率，S为信号平均功率；S/N为信噪比。</p>
+<h4 id="脉冲编码调制"><a href="#脉冲编码调制" class="headerlink" title="脉冲编码调制"></a>脉冲编码调制</h4><ul>
+<li>PCM简称脉码调制，是一种将模拟语音信号变换成数字信号的编码方式。</li>
+<li>PCM主要包括抽样、量化与编码3个过程。抽样是把连续时间模拟信号转换成离散时间连续幅度的抽样信号；量化是把离散时间连续幅度的抽样信号转换成离散时间离散幅度的数字信号；编码是将量化后的信号编码形成一个二进制码组输出。</li>
+</ul>
+<h3 id="现代通信网"><a href="#现代通信网" class="headerlink" title="现代通信网"></a>现代通信网</h3><h4 id="通信网的构成要素"><a href="#通信网的构成要素" class="headerlink" title="通信网的构成要素"></a>通信网的构成要素</h4><ul>
+<li>交换设备</li>
+<li>传输链路</li>
+<li>终端设备</li>
+</ul>
+<h4 id="功能实体的功能"><a href="#功能实体的功能" class="headerlink" title="功能实体的功能"></a>功能实体的功能</h4><p>IMS中的功能实体：</p>
+<ol>
+<li>会话控制功能（CSCF，是IMS系统的呼叫控制核心）</li>
+<li>归属用户服务器功能（HSS，是归属网络中保存IMS用户的签约信息的集中综合数据库）</li>
+<li>签约定位功能（SLF，可以看做是一种专对HLR的地址解析机制）</li>
+<li>多媒体资源功能（MRF，包括多媒体资源功能控制器、多媒体资源功能处理器）</li>
+<li>多媒体网关控制功能（MGCF，是使IMS用户和CS用户之间可以进行通信的网关）</li>
+<li>IMS多媒体网关功能（IMS-MGW提供CS网络和IMS之间的用户平面链路，受MGCF的控制）</li>
+<li>策略决策功能（PDF，根据应用层相关信息进行承载资源的授权决策，为IMS业务提供QoS保证）</li>
+<li>出口网关控制功能（BGCF，负责选择到CS域的出口的位置）</li>
+<li>信令网关功能（SGW，用于不同信令网的互联）</li>
+<li>应用服务器功能（是为IMS提供各种业务逻辑的功能实体）</li>
+</ol>
+<h4 id="光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型"><a href="#光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型" class="headerlink" title="光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型"></a>光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型</h4><p>&lt;1&gt; 光纤的分类</p>
+<ol>
+<li>按传输模式：单模光纤、多模光纤</li>
+<li>按折射率：阶跃折射率光纤、渐变折射率光纤。</li>
+</ol>
+<p>&lt;2&gt; 工作波长：850nm（多模）、1310nm（单模）、1550nm（单模）。</p>
+<p>&lt;3&gt; 传输损耗：吸收损耗、散射损耗、其他损耗。</p>
+<p>&lt;4&gt; 色散：模式色散、材料色散、波导色散、偏振膜色散。</p>
+<p>&lt;5&gt; ITU-T规范光纤类型</p>
+<ol>
+<li>常规单模光纤（G.652）</li>
+<li>色散位移光纤（G.653）</li>
+<li>截止波长位移的单模光纤（G.654）</li>
+<li>非零色散位移单模光纤（G.655）</li>
+</ol>
+<h4 id="SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构"><a href="#SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构" class="headerlink" title="SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构"></a>SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构</h4><p>&lt;1&gt; SDH传输速率与帧结构</p>
+<ol>
+<li><p>传输速率</p>
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">STM-1</th>
+<th align="center">STM-4</th>
+<th align="center">STM-16</th>
+<th align="center">STM-64</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong>传输速率</strong></td>
+<td align="center">155.520Mbit/s</td>
+<td align="center">622.080Mbit/s</td>
+<td align="center">2448.320Mbit/s</td>
+<td align="center">9953.280Mbit/s</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>帧结构</p>
+<p>STM-<em>N</em>的帧结构由3部分组成：信息净负荷、段开销、管理单元指针。</p>
+</li>
+</ol>
+<p>&lt;2&gt; SDH复用路线</p>
+<p>&lt;3&gt; SDH网元类型</p>
+<p>&lt;4&gt; SDH分层结构</p>
+<h4 id="光接口的位置及参数"><a href="#光接口的位置及参数" class="headerlink" title="光接口的位置及参数"></a>光接口的位置及参数</h4><h4 id="MSTP以太技术封装、级联技术及链路容量调整机制"><a href="#MSTP以太技术封装、级联技术及链路容量调整机制" class="headerlink" title="MSTP以太技术封装、级联技术及链路容量调整机制"></a>MSTP以太技术封装、级联技术及链路容量调整机制</h4><h4 id="ASON功能结构、3个平面、3个接口以及所支持的3种连接类型"><a href="#ASON功能结构、3个平面、3个接口以及所支持的3种连接类型" class="headerlink" title="ASON功能结构、3个平面、3个接口以及所支持的3种连接类型"></a>ASON功能结构、3个平面、3个接口以及所支持的3种连接类型</h4><h4 id="DWDM的系统组成、网元类型、组网及主光通道的定义"><a href="#DWDM的系统组成、网元类型、组网及主光通道的定义" class="headerlink" title="DWDM的系统组成、网元类型、组网及主光通道的定义"></a>DWDM的系统组成、网元类型、组网及主光通道的定义</h4><h4 id="微波站的分类、微波通信系统的组成"><a href="#微波站的分类、微波通信系统的组成" class="headerlink" title="微波站的分类、微波通信系统的组成"></a>微波站的分类、微波通信系统的组成</h4><h4 id="卫星通信系统的组成和地球站的组成"><a href="#卫星通信系统的组成和地球站的组成" class="headerlink" title="卫星通信系统的组成和地球站的组成"></a>卫星通信系统的组成和地球站的组成</h4><h4 id="接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能"><a href="#接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能" class="headerlink" title="接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能"></a>接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能</h4><h4 id="光纤接入的应用类型"><a href="#光纤接入的应用类型" class="headerlink" title="光纤接入的应用类型"></a>光纤接入的应用类型</h4><h4 id="无源光网络的结构及参考模型"><a href="#无源光网络的结构及参考模型" class="headerlink" title="无源光网络的结构及参考模型"></a>无源光网络的结构及参考模型</h4><h4 id="EPON组网、EPON上-下行数据的传输及应用"><a href="#EPON组网、EPON上-下行数据的传输及应用" class="headerlink" title="EPON组网、EPON上/下行数据的传输及应用"></a>EPON组网、EPON上/下行数据的传输及应用</h4><h4 id="无线局域网的网络结构"><a href="#无线局域网的网络结构" class="headerlink" title="无线局域网的网络结构"></a>无线局域网的网络结构</h4><h4 id="No-7信令网的组成及信令方式、我国信令网的网络结构"><a href="#No-7信令网的组成及信令方式、我国信令网的网络结构" class="headerlink" title="No.7信令网的组成及信令方式、我国信令网的网络结构"></a>No.7信令网的组成及信令方式、我国信令网的网络结构</h4><h4 id="我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级"><a href="#我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级" class="headerlink" title="我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级"></a>我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级</h4><h4 id="SDN的网络构架"><a href="#SDN的网络构架" class="headerlink" title="SDN的网络构架"></a>SDN的网络构架</h4>
     </article>
     <!-- license  -->
     
@@ -460,17 +497,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">下一篇</div>
-                <a href= "/2019/10/01/备考DAY19/" title= "备战通信工程师考试：DAY19">
-                    <div class="nextTitle">备战通信工程师考试：DAY19</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">上一篇</div>
-                <a href= "/2019/09/30/开始备战中级工程师考试/" title= "开始备战中级工程师考试，加油！">
-                    <div class="prevTitle">开始备战中级工程师考试，加油！</div>
+                <a href= "/2019/10/10/备考DAY10/" title= "备战通信工程师考试：DAY10">
+                    <div class="prevTitle">备战通信工程师考试：DAY10</div>
                 </a>
             
         </li>
@@ -579,7 +611,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#第一部分：网络层次结构"><span class="toc-number">1.</span> <span class="toc-text">第一部分：网络层次结构</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#OSI-七层模型"><span class="toc-number">1.1.</span> <span class="toc-text">OSI 七层模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#TCP-IP四层模型"><span class="toc-number">1.2.</span> <span class="toc-text">TCP/IP四层模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ATM四层模型"><span class="toc-number">1.3.</span> <span class="toc-text">ATM四层模型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二部分：交换与控制"><span class="toc-number">2.</span> <span class="toc-text">第二部分：交换与控制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#定义及优缺点"><span class="toc-number">2.1.</span> <span class="toc-text">定义及优缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#知识点"><span class="toc-number">2.2.</span> <span class="toc-text">知识点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TODOLIST"><span class="toc-number">3.</span> <span class="toc-text">TODOLIST</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#通信系统"><span class="toc-number">1.</span> <span class="toc-text">通信系统</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#通信系统的组成"><span class="toc-number">1.1.</span> <span class="toc-text">通信系统的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#信道容量"><span class="toc-number">1.2.</span> <span class="toc-text">信道容量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#脉冲编码调制"><span class="toc-number">1.3.</span> <span class="toc-text">脉冲编码调制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#现代通信网"><span class="toc-number">2.</span> <span class="toc-text">现代通信网</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#通信网的构成要素"><span class="toc-number">2.1.</span> <span class="toc-text">通信网的构成要素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#功能实体的功能"><span class="toc-number">2.2.</span> <span class="toc-text">功能实体的功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型"><span class="toc-number">2.3.</span> <span class="toc-text">光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构"><span class="toc-number">2.4.</span> <span class="toc-text">SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#光接口的位置及参数"><span class="toc-number">2.5.</span> <span class="toc-text">光接口的位置及参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MSTP以太技术封装、级联技术及链路容量调整机制"><span class="toc-number">2.6.</span> <span class="toc-text">MSTP以太技术封装、级联技术及链路容量调整机制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ASON功能结构、3个平面、3个接口以及所支持的3种连接类型"><span class="toc-number">2.7.</span> <span class="toc-text">ASON功能结构、3个平面、3个接口以及所支持的3种连接类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DWDM的系统组成、网元类型、组网及主光通道的定义"><span class="toc-number">2.8.</span> <span class="toc-text">DWDM的系统组成、网元类型、组网及主光通道的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#微波站的分类、微波通信系统的组成"><span class="toc-number">2.9.</span> <span class="toc-text">微波站的分类、微波通信系统的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#卫星通信系统的组成和地球站的组成"><span class="toc-number">2.10.</span> <span class="toc-text">卫星通信系统的组成和地球站的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能"><span class="toc-number">2.11.</span> <span class="toc-text">接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#光纤接入的应用类型"><span class="toc-number">2.12.</span> <span class="toc-text">光纤接入的应用类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#无源光网络的结构及参考模型"><span class="toc-number">2.13.</span> <span class="toc-text">无源光网络的结构及参考模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#EPON组网、EPON上-下行数据的传输及应用"><span class="toc-number">2.14.</span> <span class="toc-text">EPON组网、EPON上/下行数据的传输及应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#无线局域网的网络结构"><span class="toc-number">2.15.</span> <span class="toc-text">无线局域网的网络结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#No-7信令网的组成及信令方式、我国信令网的网络结构"><span class="toc-number">2.16.</span> <span class="toc-text">No.7信令网的组成及信令方式、我国信令网的网络结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级"><span class="toc-number">2.17.</span> <span class="toc-text">我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SDN的网络构架"><span class="toc-number">2.18.</span> <span class="toc-text">SDN的网络构架</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
