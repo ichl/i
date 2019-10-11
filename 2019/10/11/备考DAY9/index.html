@@ -285,7 +285,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">1.1k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">1.5k</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -420,19 +420,21 @@ height:50vh;
 </ol>
 <h4 id="信道容量"><a href="#信道容量" class="headerlink" title="信道容量"></a>信道容量</h4><p>在有干扰的信道中，由于信道的带宽限制和噪声的存在，信道传输信息的最大能力是有限的。信道容量是指信道传输信息的最大极限速率。</p>
 <p><strong>香农公式：</strong></p>
-<img src="https://inews.gtimg.com/newsapp_bt/0/7452579772/1000" alt="香农公式" style="zoom:50%;">
+<img src="https://inews.gtimg.com/newsapp_bt/0/7452579772/1000" alt="香农公式" style="zoom:70%;">
 
 <p>其中，N为白噪声平均功率，S为信号平均功率；S/N为信噪比。</p>
 <h4 id="脉冲编码调制"><a href="#脉冲编码调制" class="headerlink" title="脉冲编码调制"></a>脉冲编码调制</h4><ul>
 <li>PCM简称脉码调制，是一种将模拟语音信号变换成数字信号的编码方式。</li>
 <li>PCM主要包括抽样、量化与编码3个过程。抽样是把连续时间模拟信号转换成离散时间连续幅度的抽样信号；量化是把离散时间连续幅度的抽样信号转换成离散时间离散幅度的数字信号；编码是将量化后的信号编码形成一个二进制码组输出。</li>
 </ul>
-<h3 id="现代通信网"><a href="#现代通信网" class="headerlink" title="现代通信网"></a>现代通信网</h3><h4 id="通信网的构成要素"><a href="#通信网的构成要素" class="headerlink" title="通信网的构成要素"></a>通信网的构成要素</h4><ul>
+<h3 id="现代通信网"><a href="#现代通信网" class="headerlink" title="现代通信网"></a>现代通信网</h3><h4 id="通信网概述"><a href="#通信网概述" class="headerlink" title="通信网概述"></a>通信网概述</h4><p><strong>通信网的构成要素</strong></p>
+<ul>
 <li>交换设备</li>
 <li>传输链路</li>
 <li>终端设备</li>
 </ul>
-<h4 id="功能实体的功能"><a href="#功能实体的功能" class="headerlink" title="功能实体的功能"></a>功能实体的功能</h4><p>IMS中的功能实体：</p>
+<h4 id="交换与控制"><a href="#交换与控制" class="headerlink" title="交换与控制"></a>交换与控制</h4><p><strong>功能实体的功能</strong></p>
+<p>IMS中的功能实体：</p>
 <ol>
 <li>会话控制功能（CSCF，是IMS系统的呼叫控制核心）</li>
 <li>归属用户服务器功能（HSS，是归属网络中保存IMS用户的签约信息的集中综合数据库）</li>
@@ -445,7 +447,8 @@ height:50vh;
 <li>信令网关功能（SGW，用于不同信令网的互联）</li>
 <li>应用服务器功能（是为IMS提供各种业务逻辑的功能实体）</li>
 </ol>
-<h4 id="光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型"><a href="#光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型" class="headerlink" title="光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型"></a>光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型</h4><p>&lt;1&gt; 光纤的分类</p>
+<h4 id="传输网"><a href="#传输网" class="headerlink" title="传输网"></a>传输网</h4><p><strong>光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型</strong></p>
+<p>&lt;1&gt; 光纤的分类</p>
 <ol>
 <li>按传输模式：单模光纤、多模光纤</li>
 <li>按折射率：阶跃折射率光纤、渐变折射率光纤。</li>
@@ -460,9 +463,11 @@ height:50vh;
 <li>截止波长位移的单模光纤（G.654）</li>
 <li>非零色散位移单模光纤（G.655）</li>
 </ol>
-<h4 id="SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构"><a href="#SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构" class="headerlink" title="SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构"></a>SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构</h4><p>&lt;1&gt; SDH传输速率与帧结构</p>
+<p><strong>SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构</strong></p>
+<p>&lt;1&gt; SDH传输速率与帧结构</p>
 <ol>
-<li><p>传输速率</p>
+<li>传输速率</li>
+</ol>
 <table>
 <thead>
 <tr>
@@ -481,15 +486,49 @@ height:50vh;
 <td align="center">9953.280Mbit/s</td>
 </tr>
 </tbody></table>
-</li>
+<ol start="2">
 <li><p>帧结构</p>
 <p>STM-<em>N</em>的帧结构由3部分组成：信息净负荷、段开销、管理单元指针。</p>
 </li>
 </ol>
 <p>&lt;2&gt; SDH复用路线</p>
+<p>我国的光同步传输网技术规定了以2Mbit/s信号为基础的PDH系列作为SDH的有效负荷，并选用AU-4的复用路线。</p>
 <p>&lt;3&gt; SDH网元类型</p>
+<ol>
+<li>终端复用器</li>
+<li>分/插复用器</li>
+<li>再生中继器</li>
+<li>数字交叉连接设备</li>
+</ol>
 <p>&lt;4&gt; SDH分层结构</p>
-<h4 id="光接口的位置及参数"><a href="#光接口的位置及参数" class="headerlink" title="光接口的位置及参数"></a>光接口的位置及参数</h4><h4 id="MSTP以太技术封装、级联技术及链路容量调整机制"><a href="#MSTP以太技术封装、级联技术及链路容量调整机制" class="headerlink" title="MSTP以太技术封装、级联技术及链路容量调整机制"></a>MSTP以太技术封装、级联技术及链路容量调整机制</h4><h4 id="ASON功能结构、3个平面、3个接口以及所支持的3种连接类型"><a href="#ASON功能结构、3个平面、3个接口以及所支持的3种连接类型" class="headerlink" title="ASON功能结构、3个平面、3个接口以及所支持的3种连接类型"></a>ASON功能结构、3个平面、3个接口以及所支持的3种连接类型</h4><h4 id="DWDM的系统组成、网元类型、组网及主光通道的定义"><a href="#DWDM的系统组成、网元类型、组网及主光通道的定义" class="headerlink" title="DWDM的系统组成、网元类型、组网及主光通道的定义"></a>DWDM的系统组成、网元类型、组网及主光通道的定义</h4><h4 id="微波站的分类、微波通信系统的组成"><a href="#微波站的分类、微波通信系统的组成" class="headerlink" title="微波站的分类、微波通信系统的组成"></a>微波站的分类、微波通信系统的组成</h4><h4 id="卫星通信系统的组成和地球站的组成"><a href="#卫星通信系统的组成和地球站的组成" class="headerlink" title="卫星通信系统的组成和地球站的组成"></a>卫星通信系统的组成和地球站的组成</h4><h4 id="接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能"><a href="#接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能" class="headerlink" title="接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能"></a>接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能</h4><h4 id="光纤接入的应用类型"><a href="#光纤接入的应用类型" class="headerlink" title="光纤接入的应用类型"></a>光纤接入的应用类型</h4><h4 id="无源光网络的结构及参考模型"><a href="#无源光网络的结构及参考模型" class="headerlink" title="无源光网络的结构及参考模型"></a>无源光网络的结构及参考模型</h4><h4 id="EPON组网、EPON上-下行数据的传输及应用"><a href="#EPON组网、EPON上-下行数据的传输及应用" class="headerlink" title="EPON组网、EPON上/下行数据的传输及应用"></a>EPON组网、EPON上/下行数据的传输及应用</h4><h4 id="无线局域网的网络结构"><a href="#无线局域网的网络结构" class="headerlink" title="无线局域网的网络结构"></a>无线局域网的网络结构</h4><h4 id="No-7信令网的组成及信令方式、我国信令网的网络结构"><a href="#No-7信令网的组成及信令方式、我国信令网的网络结构" class="headerlink" title="No.7信令网的组成及信令方式、我国信令网的网络结构"></a>No.7信令网的组成及信令方式、我国信令网的网络结构</h4><h4 id="我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级"><a href="#我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级" class="headerlink" title="我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级"></a>我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级</h4><h4 id="SDN的网络构架"><a href="#SDN的网络构架" class="headerlink" title="SDN的网络构架"></a>SDN的网络构架</h4>
+<p>在垂直方向上，SDH传送网可分为：电路层、通道层、传输介质层 3层。</p>
+<p><strong>光接口的位置及参数</strong></p>
+<p>&lt;1&gt; 光接口位置</p>
+<img src="https://i.loli.net/2019/10/11/X84aeyztVWGM1UE.jpg" alt="光接口位置" style="zoom: 50%;">
+
+<p>&lt;2&gt; 光接口参数：</p>
+<p>光接口参数可以分为3大类：参考点S处的发送机光参数、参考点R处的接收机光参数和S-R点之间的光参数。</p>
+<p><strong>MSTP以太技术封装、级联技术及链路容量调整机制</strong></p>
+<p>&lt;1&gt; MSTP以太技术封装</p>
+<p>MSTP以太网业务的封装是指以太网信号在映射进SDH的虚容器VC之前所进行的处理。</p>
+<p>目前主要有3种链路层适配协议可以完成以太网数据业务的封装：点到点协议（PPP）、链路接入SDH规程（LAPS）、通用成帧规范（GFP）。</p>
+<p>&lt;2&gt; 级联技术</p>
+<p>VC级联技术就是把多个VC按一定规则组合在一起，使之成为一个传达整体，以适应不同带宽业务的需求。VC级联技术有相邻级联与虚级联两种。</p>
+<p>&lt;3&gt; 链路容量调整机制</p>
+<p>链路容量调整机制就是利用虚级联VC中某些开销字节传递控制信息，在源端与宿端之间提供一种无损伤、动态调整线路容量的控制机制。</p>
+<p><strong>ASON功能结构、3个平面、3个接口以及所支持的3种连接类型</strong></p>
+<p><strong>DWDM的系统组成、网元类型、组网及主光通道的定义</strong></p>
+<p><strong>微波站的分类、微波通信系统的组成</strong></p>
+<p><strong>卫星通信系统的组成和地球站的组成</strong></p>
+<h4 id="接入网"><a href="#接入网" class="headerlink" title="接入网"></a>接入网</h4><p><strong>接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能</strong></p>
+<p><strong>光纤接入的应用类型</strong></p>
+<p><strong>无源光网络的结构及参考模型</strong></p>
+<p><strong>EPON组网、EPON上/下行数据的传输及应用</strong></p>
+<p><strong>无线局域网的网络结构</strong></p>
+<h4 id="支撑网"><a href="#支撑网" class="headerlink" title="支撑网"></a>支撑网</h4><p><strong>No.7信令网的组成及信令方式、我国信令网的网络结构</strong></p>
+<p><strong>我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级</strong></p>
+<h4 id="软件定义网络"><a href="#软件定义网络" class="headerlink" title="软件定义网络"></a>软件定义网络</h4><p><strong>SDN的网络构架</strong></p>
+
     </article>
     <!-- license  -->
     
@@ -611,7 +650,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#通信系统"><span class="toc-number">1.</span> <span class="toc-text">通信系统</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#通信系统的组成"><span class="toc-number">1.1.</span> <span class="toc-text">通信系统的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#信道容量"><span class="toc-number">1.2.</span> <span class="toc-text">信道容量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#脉冲编码调制"><span class="toc-number">1.3.</span> <span class="toc-text">脉冲编码调制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#现代通信网"><span class="toc-number">2.</span> <span class="toc-text">现代通信网</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#通信网的构成要素"><span class="toc-number">2.1.</span> <span class="toc-text">通信网的构成要素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#功能实体的功能"><span class="toc-number">2.2.</span> <span class="toc-text">功能实体的功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型"><span class="toc-number">2.3.</span> <span class="toc-text">光纤的分类、工作波长、传输损耗、色散及ITU-T规范光纤类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构"><span class="toc-number">2.4.</span> <span class="toc-text">SHD传输速率与帧结构、SDH复用路线、网元类型及分层结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#光接口的位置及参数"><span class="toc-number">2.5.</span> <span class="toc-text">光接口的位置及参数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#MSTP以太技术封装、级联技术及链路容量调整机制"><span class="toc-number">2.6.</span> <span class="toc-text">MSTP以太技术封装、级联技术及链路容量调整机制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#ASON功能结构、3个平面、3个接口以及所支持的3种连接类型"><span class="toc-number">2.7.</span> <span class="toc-text">ASON功能结构、3个平面、3个接口以及所支持的3种连接类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DWDM的系统组成、网元类型、组网及主光通道的定义"><span class="toc-number">2.8.</span> <span class="toc-text">DWDM的系统组成、网元类型、组网及主光通道的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#微波站的分类、微波通信系统的组成"><span class="toc-number">2.9.</span> <span class="toc-text">微波站的分类、微波通信系统的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#卫星通信系统的组成和地球站的组成"><span class="toc-number">2.10.</span> <span class="toc-text">卫星通信系统的组成和地球站的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能"><span class="toc-number">2.11.</span> <span class="toc-text">接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#光纤接入的应用类型"><span class="toc-number">2.12.</span> <span class="toc-text">光纤接入的应用类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#无源光网络的结构及参考模型"><span class="toc-number">2.13.</span> <span class="toc-text">无源光网络的结构及参考模型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#EPON组网、EPON上-下行数据的传输及应用"><span class="toc-number">2.14.</span> <span class="toc-text">EPON组网、EPON上/下行数据的传输及应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#无线局域网的网络结构"><span class="toc-number">2.15.</span> <span class="toc-text">无线局域网的网络结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#No-7信令网的组成及信令方式、我国信令网的网络结构"><span class="toc-number">2.16.</span> <span class="toc-text">No.7信令网的组成及信令方式、我国信令网的网络结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级"><span class="toc-number">2.17.</span> <span class="toc-text">我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SDN的网络构架"><span class="toc-number">2.18.</span> <span class="toc-text">SDN的网络构架</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#通信系统"><span class="toc-number">1.</span> <span class="toc-text">通信系统</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#通信系统的组成"><span class="toc-number">1.1.</span> <span class="toc-text">通信系统的组成</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#信道容量"><span class="toc-number">1.2.</span> <span class="toc-text">信道容量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#脉冲编码调制"><span class="toc-number">1.3.</span> <span class="toc-text">脉冲编码调制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#现代通信网"><span class="toc-number">2.</span> <span class="toc-text">现代通信网</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#通信网概述"><span class="toc-number">2.1.</span> <span class="toc-text">通信网概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#交换与控制"><span class="toc-number">2.2.</span> <span class="toc-text">交换与控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#传输网"><span class="toc-number">2.3.</span> <span class="toc-text">传输网</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#接入网"><span class="toc-number">2.4.</span> <span class="toc-text">接入网</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#支撑网"><span class="toc-number">2.5.</span> <span class="toc-text">支撑网</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#软件定义网络"><span class="toc-number">2.6.</span> <span class="toc-text">软件定义网络</span></a></li></ol></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
