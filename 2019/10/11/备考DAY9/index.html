@@ -285,7 +285,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">1.5k</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">2.8k</span>阅读时长: <span class="post-count reading-time">10 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -517,17 +517,164 @@ height:50vh;
 <p>&lt;3&gt; 链路容量调整机制</p>
 <p>链路容量调整机制就是利用虚级联VC中某些开销字节传递控制信息，在源端与宿端之间提供一种无损伤、动态调整线路容量的控制机制。</p>
 <p><strong>ASON功能结构、3个平面、3个接口以及所支持的3种连接类型</strong></p>
+<p>&lt;1&gt; ASON功能结构</p>
+<p>ASON与传统的光传输网相比是引入了更加智能化的控制平面，从而使光网络能够在信令的控制下完成网络连接的自动建立、资源的自动发现等过程。其体系结构表现在具有ASON特色的3个平面、3个接口及所支持的3种连接类型上。</p>
+<p>&lt;2&gt; 3个平面</p>
+<ol>
+<li>管理平面</li>
+<li>控制平面</li>
+<li>传输平面</li>
+</ol>
+<p>&lt;3&gt; 3个接口以及所支持的3种连接类型</p>
+<p>ASON的3个接口：</p>
+<ol>
+<li>控制平面与传输平面之间的<strong>CCI</strong>接口</li>
+<li>管理平面与传输平面之间的<strong>NMI-T</strong>接口</li>
+<li>管理平面与控制平面之间的<strong>NMI-A</strong>接口</li>
+</ol>
+<p>支持的3种连接类型：</p>
+<ol>
+<li>永久连接（PC）</li>
+<li>软永久连接（SPC）</li>
+<li>交换连接（SC）</li>
+</ol>
 <p><strong>DWDM的系统组成、网元类型、组网及主光通道的定义</strong></p>
+<p>&lt;1&gt; DWDM的系统组成</p>
+<ol>
+<li>光发射机</li>
+<li>光中继放大</li>
+<li>光接收机</li>
+<li>光监控信道</li>
+<li>网络管理系统</li>
+</ol>
+<p>&lt;2&gt; 网元类型</p>
+<ol>
+<li>光终端复用设备</li>
+<li>光线路放大设备</li>
+<li>光分插复用设备</li>
+<li>电中继设备</li>
+</ol>
+<p>&lt;3&gt; 组网及主光通道的定义</p>
+<ul>
+<li>WDM组网包括：点到点组网、链形组网、环形组网。</li>
+<li>主光通道的定义：在DWDM系统中定义MPI-S和MPI-R之间为主光通道。</li>
+</ul>
 <p><strong>微波站的分类、微波通信系统的组成</strong></p>
+<p>&lt;1&gt; 微波站的分类</p>
+<ol>
+<li>终端站</li>
+<li>分路站</li>
+<li>枢纽站</li>
+<li>中继站</li>
+</ol>
+<p>&lt;2&gt; 微波通信系统的组成<br><img src="https://raw.githubusercontent.com/ichl/img/master/e9dbfb2a12d8a18acc1197f0b83f067.jpg" alt="微波通信系统的组成" style="zoom:60%;"></p>
 <p><strong>卫星通信系统的组成和地球站的组成</strong></p>
+<p>&lt;1&gt; 卫星通信系统的组成</p>
+<ol>
+<li>通信卫星</li>
+<li>通信地球站</li>
+<li>跟踪遥测及指令系统</li>
+<li>监控管理</li>
+</ol>
+<p>&lt;2&gt; 地球站的组成</p>
+<ol>
+<li>天线系统</li>
+<li>高功率放大设备</li>
+<li>低噪声接收设备</li>
+<li>变频器设备</li>
+<li>调制解调设备</li>
+<li>编解码设备</li>
+<li>中继设备</li>
+</ol>
 <h4 id="接入网"><a href="#接入网" class="headerlink" title="接入网"></a>接入网</h4><p><strong>接入网在通信网中的位置、接入网的定义、接口定界以及接入网的功能</strong></p>
+<p>&lt;1&gt; 接入网在通信网中的位置</p>
+<img src="https://raw.githubusercontent.com/ichl/img/master/20191012102127.png" alt="接入网在通信网中的位置" style="zoom:70%;">
+
+<p>&lt;2&gt; 接入网的定义</p>
+<p>接入网是由业务节点接口（SNI）和相关用户网络接口（UNI）之间的一系列传送实体（例如线路和传输设施）组成的、为通信业务提供所需传送承载能力的实施系统，可经由Q3接口进行配置和管理。</p>
+<p>&lt;3&gt; 接口定界</p>
+<p><img src="https://raw.githubusercontent.com/ichl/img/master/20191012102434.png" alt="接口定界"></p>
+<p>&lt;4&gt; 接入网的功能</p>
+<ol>
+<li><strong>用户口功能</strong>：将特定的UNI的要求适配到CF和AN-SMF。</li>
+<li><strong>业务口功能</strong>：将特定的SNI的要求与公共承载相适配以便CF处理。</li>
+<li><strong>核心功能（Core Function，CF）</strong>：将用户或业务端口的承载要求与公共传送承载适配。</li>
+<li><strong>传送功能（Transfer Function，TF）</strong>：在AN的不同位置之间为传送提供通道和传输介质。</li>
+<li><strong>AN系统管理功能（AN System Management Function，AN-SMF）</strong>：协调各功能的指配、操作和维护。</li>
+</ol>
 <p><strong>光纤接入的应用类型</strong></p>
+<ol>
+<li>FTTC：ONU设置在人孔、电线杆分线盒、交接箱等，ONU到用户之间使用双绞线、同轴电缆等， 是一种光缆/铜缆混合系统。</li>
+<li>FTTB：ONU直接放在楼内，经铜线将业务分送到各个用户，采用点对多点结构。</li>
+<li>FTTO：ONU位于大型企事业用户终端设备处，采用点对多点结构。</li>
+<li>FTTH：ONU位于用户家中。</li>
+</ol>
 <p><strong>无源光网络的结构及参考模型</strong></p>
+<p>无源光网络(PON)由光线路终端（OLT）、光合/分路器（Splitter）和光网络单元（ONU）组成，采用<code>树形</code>拓扑结构。</p>
+<img src="https://raw.githubusercontent.com/ichl/img/master/32c244a0193be24807749472bada92f.jpg" alt="无源光网络的结构" style="zoom:50%;">
+
 <p><strong>EPON组网、EPON上/下行数据的传输及应用</strong></p>
+<p>PON系统采用WDM技术，实现单纤双向传输。</p>
+<p>&lt;1&gt; EPON的组网结构</p>
+<img src="https://raw.githubusercontent.com/ichl/img/master/20191012104728.png" style="zoom:75%;">
+
+<p>&lt;2&gt; EPON上/下行数据的传输</p>
+<p>下行数据流采用广播技术，OLT连续广播发送，ONU选择性接收波长1490nm</p>
+<p>上行数据流采用TDMA（时分多址复用）技术，波长1310nm。</p>
+<p>&lt;3&gt; 基于EPON的FTTx组网应用</p>
+<p>企业用户：FTTB、FTTO，或者FTTB+LAN、FTTB+xDSL</p>
+<p>住宅小区：FTTC、FTTB。</p>
 <p><strong>无线局域网的网络结构</strong></p>
+<p>无线局域网（WLAN）的网络拓扑结构可归结为两类：</p>
+<ol>
+<li>无中心的对等网络（Ad hoc，自组织网络）</li>
+<li>有中心的结构化网络</li>
+</ol>
 <h4 id="支撑网"><a href="#支撑网" class="headerlink" title="支撑网"></a>支撑网</h4><p><strong>No.7信令网的组成及信令方式、我国信令网的网络结构</strong></p>
+<p>&lt;1&gt; No.7信令网的组成</p>
+<ol>
+<li>信令点（SP）</li>
+<li>信令转接点（STP）</li>
+<li>连接信令点及信令转接点间的信令链路（SL）</li>
+</ol>
+<p>&lt;2&gt; 信令工作方式</p>
+<ol>
+<li>对应工作方式（直联方式）</li>
+<li>准对应工作方式（准直联方式）</li>
+</ol>
+<p>&lt;3&gt; 我国信令网的网络结构（3级）</p>
+<ul>
+<li>第1级：高级信令转接点（HSTP）</li>
+<li>第2级：低级信令转接点（LSTP）</li>
+<li>第3级：信令点</li>
+</ul>
 <p><strong>我国同步网的网络结构、主从同步网中从时钟的工作模式及主从同步时钟等级</strong></p>
+<p>&lt;1&gt; 我国同步网的网络结构</p>
+<p>我国采用的同步房还是是等级主从同步模式，主时钟在北京，副时钟在武汉。</p>
+<p><img src="https://raw.githubusercontent.com/ichl/img/master/20191012142933.png" alt="我国同步网的网络结构"></p>
+<p>&lt;2&gt; 主从同步网中从时钟的工作模式（3种）</p>
+<ol>
+<li>正常工作模式——跟踪锁定上级时钟模式</li>
+<li>保持模式</li>
+<li>自由运行模式——自由振荡模式</li>
+</ol>
+<p>&lt;3&gt; 主从同步时钟等级（4级）</p>
+<p>时钟质量级别由高到低分别为：</p>
+<ol>
+<li>基准主时钟</li>
+<li>转接局时钟</li>
+<li>端局时钟</li>
+<li>网络单元时钟</li>
+</ol>
 <h4 id="软件定义网络"><a href="#软件定义网络" class="headerlink" title="软件定义网络"></a>软件定义网络</h4><p><strong>SDN的网络构架</strong></p>
+<p>SDN架构体系分为3个平面，自上而下分别是：</p>
+<ol>
+<li>应用平面（应用层）</li>
+<li>控制平面（控制层）</li>
+<li>数据平面（基础设施层）</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/ichl/img/master/20191012144006.png" alt="SDN的网络构架"></p>
+<p><strong>OpenFlow协议是SDN实现控制与转发分离的基础，位于架构的南向接口。</strong></p>
 
     </article>
     <!-- license  -->
@@ -535,6 +682,11 @@ height:50vh;
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="next">
+            
+                <div class="nextSlogan">下一篇</div>
+                <a href= "/2019/10/12/备考DAY8/" title= "备战通信工程师考试：DAY8">
+                    <div class="nextTitle">备战通信工程师考试：DAY8</div>
+                </a>
             
         </li>
         <li class="previous">
@@ -883,9 +1035,81 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 18
+        Total : 20
         </div>
         <!-- search  -->
         
@@ -898,6 +1122,16 @@ top:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2019/10/12/my-love/" >［音乐］My Love - Westlife</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/12</span><a class="archive-post-title" href= "/2019/10/12/备考DAY8/" >备战通信工程师考试：DAY8</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -961,12 +1195,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/01</span><a class="archive-post-title" href= "/2019/10/01/备考DAY19/" >备战通信工程师考试：DAY19</a>
+            <span class="archive-post-date">10/01</span><a class="archive-post-title" href= "/2019/10/01/庆祝国庆/" >热烈庆祝中华人民共和国成立70周年</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/01</span><a class="archive-post-title" href= "/2019/10/01/庆祝国庆/" >热烈庆祝中华人民共和国成立70周年</a>
+            <span class="archive-post-date">10/01</span><a class="archive-post-title" href= "/2019/10/01/备考DAY19/" >备战通信工程师考试：DAY19</a>
         </li>
     
     
@@ -994,21 +1228,21 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="软件"><span class="iconfont-archer">&#xe606;</span>软件</span>
-    
-        <span class="sidebar-tag-name" data-tags="CAD"><span class="iconfont-archer">&#xe606;</span>CAD</span>
-    
-        <span class="sidebar-tag-name" data-tags="博客"><span class="iconfont-archer">&#xe606;</span>博客</span>
+        <span class="sidebar-tag-name" data-tags="经典音乐"><span class="iconfont-archer">&#xe606;</span>经典音乐</span>
     
         <span class="sidebar-tag-name" data-tags="备考"><span class="iconfont-archer">&#xe606;</span>备考</span>
     
         <span class="sidebar-tag-name" data-tags="通信专业技术人员职业水平考试"><span class="iconfont-archer">&#xe606;</span>通信专业技术人员职业水平考试</span>
     
+        <span class="sidebar-tag-name" data-tags="博客"><span class="iconfont-archer">&#xe606;</span>博客</span>
+    
+        <span class="sidebar-tag-name" data-tags="软件"><span class="iconfont-archer">&#xe606;</span>软件</span>
+    
+        <span class="sidebar-tag-name" data-tags="CAD"><span class="iconfont-archer">&#xe606;</span>CAD</span>
+    
         <span class="sidebar-tag-name" data-tags="域名"><span class="iconfont-archer">&#xe606;</span>域名</span>
     
         <span class="sidebar-tag-name" data-tags="服务器"><span class="iconfont-archer">&#xe606;</span>服务器</span>
-    
-        <span class="sidebar-tag-name" data-tags="经典音乐"><span class="iconfont-archer">&#xe606;</span>经典音乐</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -1043,13 +1277,13 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
-        <span class="sidebar-category-name" data-categories="收藏"><span class="iconfont-archer">&#xe60a;</span>收藏</span>
+        <span class="sidebar-category-name" data-categories="音乐"><span class="iconfont-archer">&#xe60a;</span>音乐</span>
     
         <span class="sidebar-category-name" data-categories="备考"><span class="iconfont-archer">&#xe60a;</span>备考</span>
     
-        <span class="sidebar-category-name" data-categories="随笔"><span class="iconfont-archer">&#xe60a;</span>随笔</span>
+        <span class="sidebar-category-name" data-categories="收藏"><span class="iconfont-archer">&#xe60a;</span>收藏</span>
     
-        <span class="sidebar-category-name" data-categories="音乐"><span class="iconfont-archer">&#xe60a;</span>音乐</span>
+        <span class="sidebar-category-name" data-categories="随笔"><span class="iconfont-archer">&#xe60a;</span>随笔</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
