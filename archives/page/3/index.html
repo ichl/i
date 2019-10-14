@@ -22,7 +22,7 @@
     <meta name="description" content="My personal blog site, powered by Hexo and github.io.">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>［音乐］Sailing - Rod Stewart · changliang.io</title>
+    <title>changliang.io</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -211,13 +211,8 @@
         ga('send', 'pageview');
     </script>
     
-<link rel="stylesheet" href="\assets\css\APlayer.min.css" class="aplayer-style-marker">
-<script src="\assets\js\APlayer.min.js" class="aplayer-script-marker"></script>
-<script src="\assets\js\Meting.min.js" class="meting-script-marker"></script>
 </head>
 
-    
-        <body class="post-body">
     
     
 <header class="header">
@@ -225,15 +220,6 @@
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
-    
-    <div class="banner">
-            <div class="blog-title">
-                <a href="/" >changliang.io</a>
-            </div>
-            <div class="post-title">
-                <a href="#" class="post-name">［音乐］Sailing - Rod Stewart</a>
-            </div>
-    </div>
     
     <a class="home-link" href=/>changliang.io</a>
 </header>
@@ -245,69 +231,24 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/space1-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
-            
-            ［音乐］Sailing - Rod Stewart
-            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页meta -->
-        
-            <div class="post-intros">
-                <!-- 文章页标签  -->
-                
-                    <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "经典音乐">经典音乐</a>
-    
-</div>
-                
-                
-                    <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">113</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
-                    </div>
-                
-                <div class="post-intro-meta">
-                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/10/02</span>
-                    
-                    <span class="shareWrapper">
-                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
-                        <span class="shareText">Share</span>
-                        <ul class="shareList">
-                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
-                                <div class="share-qrcode"></div>
-                            </li>
-                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
-                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
-                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
-                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
-                        </ul>
-                    </span>
-                </div>
-            </div>
         
     </div>
 </div>
@@ -408,51 +349,94 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main post-page">
-    <article class="article-entry">
-        
-    <div id="aplayer-kfdhCOfW" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="1872296" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>
+            <main class="main index-page">
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/09/27/CAD中快速统计块的数量/" >
+            
+                <span>CAD中快速统计块的数量</span>
+        </a>
+        <div class="abstract-content">
+            最近在做一个项目时需要统计图纸中的摄像头点位等数量，一个一个数实在太麻烦了，在网上找到了两种方法，特此收藏记录。
+方法一:使用QSELECT命令
 
-<a id="more"></a>
+在打开的CAD图纸中，输入命令“QSELECT”
+按空格键，显示“快速选择”窗口，
+选择对应的对象类型，这里现在“所有图元”。
+选择搜索范围，这里选择已知的图形，应用到“当前选择”。
+选择特性，有颜色、图层、线宽、线性比例等等。
+选择运算符，有等于、不等于、大于、小于、全选五种。
+选择特性对应的值，每个特性对应的值不一样。
+点“确定”，在命令栏中就可以显示对象的数量了。
 
-<p>我最爱的经典老歌之一——《Sailing》。Rod Stewart那低沉、沙哑的嗓音，仿佛经历了无尽的沧桑……<br>从初中时（那时候还是听磁带）就喜欢上了这首歌，旋律很容易让人感到一种发自内心的共鸣。<br><strong>航行就像一种历练，而我们每个人在不同阶段也接受着不同的历练，就为了那一个个可以为之奋斗的目标。</strong></p>
 
+方法二:使用FILTER命令
+
+输入快捷命令 fi ,跳出对象选择过...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "软件">软件</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "CAD">CAD</a>
+    
+</div>
+            
+        </div>
     </article>
-    <!-- license  -->
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/09/08/新的开始/" >
+            
+                <span>新的开始</span>
+        </a>
+        <div class="abstract-content">
+            写在前面的话　　之前从高中就喜欢鼓捣网站，后来接触多了编程语言，开始鼓捣博客，PHP折腾的比较多，主要是用Wordpress，改主题，改插件，等等……但是技术一直没什么长进，另外，主要是经常“喜新厌旧”的，就拿“新的开始”、“Hello World”这两个主题起过头的博客都不知道多少个了，总是无法坚持写，最多的一个博客可能写过3、4年吧，最后也存了个档就删除了。
+关于域名　　说说这个域名：changliang.io，也是我的名字域名，因此对我来说意义非凡，但真正让我有注册这个域名的灵感还是在学习Python时，老师讲到的“常量”，（当然，我初中就知道常量的意思，我也曾近因为这个在计算机课...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/08</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "博客">博客</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "域名">域名</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "服务器">服务器</a>
+    
+</div>
+            
+        </div>
+    </article>
     
     <!-- paginator  -->
-    <ul class="post-paginator">
-        <li class="next">
-            
-                <div class="nextSlogan">下一篇</div>
-                <a href= "/2019/10/02/为Hexo配置aplayer播放器/" title= "为Hexo配置Aplayer播放器">
-                    <div class="nextTitle">为Hexo配置Aplayer播放器</div>
-                </a>
-            
-        </li>
-        <li class="previous">
-            
-                <div class="prevSlogan">上一篇</div>
-                <a href= "/2019/10/01/庆祝国庆/" title= "热烈庆祝中华人民共和国成立70周年">
-                    <div class="prevTitle">热烈庆祝中华人民共和国成立70周年</div>
-                </a>
-            
-        </li>
-    </ul>
-    <!-- 评论插件 -->
-    <!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
     
+    <nav class="page-nav">
+        <a class="extend prev" rel="prev" href="/archives/page/2/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span>
+    </nav>
     
-    <!-- partial('_partial/comment/changyan') -->
-    <!--PC版-->
-
-
-    
-    
-
-    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -527,24 +511,6 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
-    
-    <div class="toc-wrapper" style=
-    
-
-
-
-
-
-
-
-top:50vh;
-
-    >
-        <div class="toc-catalog">
-            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
-        </div>
-        
-    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1078,8 +1044,6 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
-    
-        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
