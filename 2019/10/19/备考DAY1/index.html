@@ -22,7 +22,7 @@
     <meta name="description" content="My personal blog site, powered by Hexo.">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>备战通信工程师考试：DAY17 · changliang.io</title>
+    <title>备战通信工程师考试：DAY1 · changliang.io</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -228,7 +228,7 @@
                 <a href="/" >changliang.io</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">备战通信工程师考试：DAY17</a>
+                <a href="#" class="post-name">备战通信工程师考试：DAY1</a>
             </div>
     </div>
     
@@ -258,7 +258,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            备战通信工程师考试：DAY17
+            备战通信工程师考试：DAY1
             <!-- 404 -->
             
         </h1>
@@ -285,12 +285,12 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">1.2k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">150</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/10/03</span>
+                    <span class="post-intro-time">2019/10/19</span>
                     
                     <span class="shareWrapper">
                         <span class="iconfont-archer shareIcon">&#xe71d;</span>
@@ -409,64 +409,11 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>今天离考试还有<code>17</code>天,今天复习的重点如下：</p>
-<h3 id="云计算"><a href="#云计算" class="headerlink" title="云计算"></a>云计算</h3><h4 id="云计算的定义"><a href="#云计算的定义" class="headerlink" title="云计算的定义"></a>云计算的定义</h4><p>云计算是一种模式，能以泛在的、便利的、按需的方式通过网络访问可配置的计算机资源（例如：网络、服务器、存储器、应用和服务），这些资源可以实现快速部署与发布，并且只需要极少的管理成本或服务提供商的干预。</p>
-<h4 id="云计算的3中主要服务模式"><a href="#云计算的3中主要服务模式" class="headerlink" title="云计算的3中主要服务模式"></a>云计算的3中主要服务模式</h4><ol>
-<li>SaaS软件即服务 （以服务的方式将应用软件提供给互联网最终用户，如Office Online、在线CRM等）</li>
-<li>PaaS平台即服务 （以服务的方式提供应用程序开发和部署平台，如微软Azure平台、谷歌AppEngine）</li>
-<li>IaaS基础设施即服务（以服务的形式提供服务器、存储和网络硬件以及相关软件，如亚马逊AWS、阿里巴巴的阿里云、腾讯的腾讯云等）</li>
-</ol>
-<h4 id="云计算的4种部署方式"><a href="#云计算的4种部署方式" class="headerlink" title="云计算的4种部署方式"></a>云计算的4种部署方式</h4><ol>
-<li>公有云 （由云服务提供商运营）</li>
-<li>私有云 （由企业自建自用的云计算中心）</li>
-<li>行业云</li>
-<li>混合云</li>
-</ol>
-<h4 id="云计算关键技术"><a href="#云计算关键技术" class="headerlink" title="云计算关键技术"></a>云计算关键技术</h4><ol>
-<li>分布式计算</li>
-<li>分布式存储</li>
-<li>服务器虚拟化</li>
-<li>多租户</li>
-<li>存储虚拟化</li>
-<li>桌面虚拟化</li>
-<li>云管理平台</li>
-</ol>
-<h4 id="OpenStack相关概念"><a href="#OpenStack相关概念" class="headerlink" title="OpenStack相关概念"></a>OpenStack相关概念</h4><p>&lt;1&gt; 云操作系统框架的概念<br>云操作系统就是面向云计算的一个核心软件，它用来管理云计算所用到的各类资源，让系统具备为用户提供服务的能力,一个完整的云操作系统具备以下5个方面的主要功能：</p>
-<ol>
-<li>资源接入与抽象</li>
-<li>资源分配与调度</li>
-<li>应用生命周期管理</li>
-<li>系统管理维护</li>
-<li>人机交互支持</li>
-</ol>
-<p>OpenStack等操作系统框架需要由其他软件配合，完成上述云操作系统具备的主要功能。基于这个框架，可以集成各类不同的组件，构造满足不同场景需要的云操作系统。<br>&lt;2&gt; OpenStack的设计原理和体系结构<br>OpenStack是由一系列具有RESTful接口的Web服务实现的，是一系列组件服务的集合。<br><strong>体系结构</strong>:OpenStack并不是单一的服务，其含有子组件，子组件内有模块实现各自的功能，通过消息队列和数据库，各个组件可以相互调用，互相通信，模块间耦合度比较低，可以灵活的根据需要组合出适合不同用户的需求的架构。<br>&lt;3&gt; OpenStack的核心项目的功能</p>
-<ol>
-<li>计算：Nova （Nova是一套控制器，用于为单个用户或群组管理虚拟机实例的整个生命周期）</li>
-<li>对象存储：Swift （Swift用在大规模可扩展系统中，实现对象存储，允许进行存储或检索，可为Glance提供镜像存储，为Cinder提供卷备份服务）</li>
-<li>镜像服务：Glance （Glance是虚拟机镜像查找及检索系统）</li>
-<li>身份服务：Keystone （Keystone为OpenStack其他服务提供身份认证，服务规则和服务令牌的功能）</li>
-<li>网络管理：Neutron （Neutron可提供云计算的网络虚拟化技术，为OpenStack其他服务提供网络连接服务）</li>
-<li>快存储：Cinder （Cinder可以为运行实例提供稳定的数据块存储服务）</li>
-<li>UI界面：Horizon （Horizon是OpenStack中的各种服务的外部管理门户）</li>
-<li>测量：Ceilometer （Ceilometer把OpenStack内部发生的几乎所有事件都收集起来，然后为计费和监控及其他服务提供数据支撑）</li>
-<li>部署编排：Heat （Heat提供一种通过模板定义的协同部署方式，实现自动化部署）</li>
-<li>数据库服务：Trove （使用Trove，用户可以在OpenStack环境下提供关系和非关系数据库引擎服务）</li>
-<li>大数据服务：Sahara （Sahara提供简单的大数据工具集群创建和管理服务，扩展到提供分析即服务层面的大数据业务能力）</li>
-<li>裸机管理：Ironic （Ironic是裸机[物理机]的管理解决方案。</li>
-</ol>
-<h4 id="Docker容器典型应用场景"><a href="#Docker容器典型应用场景" class="headerlink" title="Docker容器典型应用场景"></a>Docker容器典型应用场景</h4><ol>
-<li>对应用进行自动打包和部署</li>
-<li>创建轻量私有的PaaS环境</li>
-<li>自动化测试和持续整合与部署</li>
-<li>部署和扩展Web应用数据库和后端服务</li>
-</ol>
-<h4 id="云计算的安全架构和核心内容"><a href="#云计算的安全架构和核心内容" class="headerlink" title="云计算的安全架构和核心内容"></a>云计算的安全架构和核心内容</h4><p>云安全架构是端到端的安全架构，有以下几个核心部分：</p>
-<ol>
-<li>终端安全</li>
-<li>管道安全</li>
-<li>平台和数据安全</li>
-<li>管理安全</li>
-</ol>
+        <p>考完了，说下今天考试的感受吧…</p>
+<p>如果用一句话总结的话，<strong>自己离考试要求还有很大的差距</strong>。</p>
+<p>直观的感受就是很多题不会，之前刷的题，比如数据库的，感觉都没问题了，结果这次考试数据库的题却是给了一个ER关系图，可这块我根本没复习…</p>
+<p>另外IP分组计算，今年也考了，但是我看了看估分答案，做错了，至今不知道怎么错的…</p>
+<p>等2个月后成绩出来再决定下明年的计划吧。</p>
 
     </article>
     <!-- license  -->
@@ -475,17 +422,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">下一篇</div>
-                <a href= "/2019/10/04/备考DAY16/" title= "备战通信工程师考试：DAY16">
-                    <div class="nextTitle">备战通信工程师考试：DAY16</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">上一篇</div>
-                <a href= "/2019/10/02/备考DAY18/" title= "备战通信工程师考试：DAY18">
-                    <div class="prevTitle">备战通信工程师考试：DAY18</div>
+                <a href= "/2019/10/18/备考DAY2/" title= "备战通信工程师考试：DAY2">
+                    <div class="prevTitle">备战通信工程师考试：DAY2</div>
                 </a>
             
         </li>
@@ -594,7 +536,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#云计算"><span class="toc-number">1.</span> <span class="toc-text">云计算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的定义"><span class="toc-number">1.1.</span> <span class="toc-text">云计算的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的3中主要服务模式"><span class="toc-number">1.2.</span> <span class="toc-text">云计算的3中主要服务模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的4种部署方式"><span class="toc-number">1.3.</span> <span class="toc-text">云计算的4种部署方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算关键技术"><span class="toc-number">1.4.</span> <span class="toc-text">云计算关键技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#OpenStack相关概念"><span class="toc-number">1.5.</span> <span class="toc-text">OpenStack相关概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Docker容器典型应用场景"><span class="toc-number">1.6.</span> <span class="toc-text">Docker容器典型应用场景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#云计算的安全架构和核心内容"><span class="toc-number">1.7.</span> <span class="toc-text">云计算的安全架构和核心内容</span></a></li></ol></li></ol>
+        
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
