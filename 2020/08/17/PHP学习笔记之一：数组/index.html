@@ -22,7 +22,7 @@
     <meta name="description" content="My personal blog site, powered by Hexo.">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>备战通信工程师考试：DAY6 · changliang.io</title>
+    <title>PHP学习笔记之一：数组 · changliang.io</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -228,7 +228,7 @@
                 <a href="/" >changliang.io</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">备战通信工程师考试：DAY6</a>
+                <a href="#" class="post-name">PHP学习笔记之一：数组</a>
             </div>
     </div>
     
@@ -258,7 +258,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            备战通信工程师考试：DAY6
+            PHP学习笔记之一：数组
             <!-- 404 -->
             
         </h1>
@@ -277,20 +277,20 @@ height:50vh;
                 
                     <div class= post-intro-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "备考">备考</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "编程">编程</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "通信专业技术人员职业水平考试">通信专业技术人员职业水平考试</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "PHP">PHP</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">261</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">189</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/10/14</span>
+                    <span class="post-intro-time">2020/08/17</span>
                     
                     <span class="shareWrapper">
                         <span class="iconfont-archer shareIcon">&#xe71d;</span>
@@ -409,33 +409,12 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>今天离考试还有<code>6</code>天,今天复习的重点如下：</p>
-<h3 id="局域网"><a href="#局域网" class="headerlink" title="局域网"></a>局域网</h3><h4 id="局域网的组成和特点"><a href="#局域网的组成和特点" class="headerlink" title="局域网的组成和特点"></a>局域网的组成和特点</h4><p>&lt;1&gt; <strong>局域网的组成</strong><br>局域网由以下几部分组成：</p>
-<ol>
-<li>计算机</li>
-<li>传输介质</li>
-<li>网络适配器（网卡）</li>
-<li>网络操作系统</li>
-</ol>
-<p>&lt;2&gt; <strong>局域网的特点</strong></p>
-<ol>
-<li>网络覆盖范围小</li>
-<li>数据传输速率高</li>
-<li>传输质量好，误码率低</li>
-<li>介质访问控制方法相对简单</li>
-<li>软硬件设施及协议方面有所简化，有相对规则的拓扑结构</li>
-</ol>
-<h4 id="局域网的拓扑结构"><a href="#局域网的拓扑结构" class="headerlink" title="局域网的拓扑结构"></a>局域网的拓扑结构</h4><ol>
-<li>星型结构 (由中心节点和分支节点构成)</li>
-<li>总线型结构 (将各个节点设备和一根总线相连)</li>
-<li>环形结构 (各节点通过一条首尾相连的通信链路连接起来，形成的一个闭合的环)</li>
-<li>混合型结构 (上述各种拓扑混合起来的结构，常见有树形、环星型等)</li>
-</ol>
-<h4 id="无线局域网的构成方式"><a href="#无线局域网的构成方式" class="headerlink" title="无线局域网的构成方式"></a>无线局域网的构成方式</h4><ol>
-<li>点对点</li>
-<li>点对多点</li>
-<li>分布式</li>
-</ol>
+        <p>创建一个一位数组，使用<code>foreach</code>遍历数组：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$arr = <span class="keyword">array</span>(<span class="string">"one"</span>, <span class="string">"two"</span>, <span class="string">"three"</span>);</span><br><span class="line"><span class="keyword">foreach</span> ($arr <span class="keyword">as</span> $value) &#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"Value: $value&lt;br /&gt;\n"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>创建一个二维数组，使用<code>foreach</code>遍历数组：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$fruits = <span class="keyword">array</span> (</span><br><span class="line">    <span class="string">"fruits"</span> =&gt; <span class="keyword">array</span>(<span class="string">"a"</span> =&gt; <span class="string">"orange"</span>, <span class="string">"b"</span> =&gt; <span class="string">"banana"</span>, <span class="string">"c"</span> =&gt; <span class="string">"apple"</span>),</span><br><span class="line">    <span class="string">"numbers"</span> =&gt; <span class="keyword">array</span>(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>),</span><br><span class="line">    <span class="string">"holes"</span>  =&gt; <span class="keyword">array</span>(<span class="string">"first"</span>, <span class="number">5</span> =&gt; <span class="string">"second"</span>, <span class="string">"third"</span>)</span><br><span class="line">);</span><br><span class="line">$fruits[<span class="number">0</span>][<span class="string">"d"</span>]=<span class="string">"orange"</span>; <span class="comment">//无法找到标识为“0”的数组，故此时d =&gt; orange的值会追加到$fruits数组最后一行</span></span><br><span class="line">$fruits[<span class="string">"fruits"</span>][<span class="string">"d"</span>]=<span class="string">"Mango"</span>; <span class="comment">//此时可以正常将d =&gt; Mango的值会追加到$fruits数组最后</span></span><br><span class="line">$fruits[<span class="string">"fruits"</span>][<span class="string">"c"</span>]=<span class="string">"Mango"</span>; <span class="comment">//此时会覆盖$fruits数组标识为"c"的原值"apple"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">foreach</span> ($fruits <span class="keyword">as</span> $k=&gt;$i) &#123;</span><br><span class="line">   <span class="keyword">foreach</span> ($i <span class="keyword">as</span> $a=&gt;$b) &#123;</span><br><span class="line">      <span class="keyword">echo</span> <span class="string">"$a.$b&lt;br /&gt;\n"</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
 
     </article>
     <!-- license  -->
@@ -444,17 +423,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">下一篇</div>
-                <a href= "/2019/10/17/备考DAY5/" title= "备战通信工程师考试：DAY5">
-                    <div class="nextTitle">备战通信工程师考试：DAY5</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">上一篇</div>
-                <a href= "/2019/10/13/备考DAY7/" title= "备战通信工程师考试：DAY7">
-                    <div class="prevTitle">备战通信工程师考试：DAY7</div>
+                <a href= "/2020/02/16/Windows-下部分实用命令/" title= "Windows10下部分实用命令">
+                    <div class="prevTitle">Windows10下部分实用命令</div>
                 </a>
             
         </li>
@@ -563,7 +537,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>目录</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#局域网"><span class="toc-number">1.</span> <span class="toc-text">局域网</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#局域网的组成和特点"><span class="toc-number">1.1.</span> <span class="toc-text">局域网的组成和特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#局域网的拓扑结构"><span class="toc-number">1.2.</span> <span class="toc-text">局域网的拓扑结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#无线局域网的构成方式"><span class="toc-number">1.3.</span> <span class="toc-text">无线局域网的构成方式</span></a></li></ol></li></ol>
+        
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
